@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: white;
+  background: url("../assets/bgmain.gif") no-repeat center center fixed;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid #4e57d4;
+  animation: spinner-bulqg1 0.8s infinite linear alternate,
+    spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes spinner-oaa3wk {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start outside the right edge */
+  }
+  100% {
+    transform: translateX(-100%); /* End outside the left edge */
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 30s linear infinite; /* Adjust timing to fit the speed you want */
+}
+.hello {
+  mix-blend-mode: multiply;
+}
+
+.partnership-blk {
+  background-image: url("../assets/lastbanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 105vh;
+}
+/* App.css or other corresponding CSS file */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll 60s linear infinite;
+}
+
+@media (max-width: 1023.98px) {
+  .partnership-blk {
+    min-height: 420px; /* Height for small screens */
+    background-position: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .partnership-blk {
+    min-height: 480px; /* Height for medium screens */
+  }
+}
+
+/* Responsive padding adjustments */
+@media (min-width: 576px) {
+  .pb-sm-5,
+  .py-sm-5 {
+    padding-bottom: 3rem !important;
+  }
+  .pt-sm-5,
+  .py-sm-5 {
+    padding-top: 3rem !important;
+  }
+}
+
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@media (max-width: 300px) {
+  .text-small {
+    font-size: 10px; /* Adjust the size as needed */
+  }
+}
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-right: 100%; /* Space between loops */
+  animation: marquee 30s linear infinite; /* Increase duration to 30s */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-blink {
+  animation: blink 1.5s infinite;
+}
+
+.btn-pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  /* width: fit-content; */
+  color: white;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  /* box-shadow: 5px 5px 7px 0px #ef476f3f; */
+  font-size: 0.9rem;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 100;
+  /* border-radius: 5px; */
+}
+
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-pink:hover {
+  border: solid 3px #115a15;
+  /* color: green; */
+  scale: 1.1;
+}
