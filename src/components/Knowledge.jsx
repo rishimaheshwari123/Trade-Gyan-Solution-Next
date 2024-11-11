@@ -1,8 +1,8 @@
 import React from "react";
-import kno from "@/assets/kno.png";
-import k1 from "@/assets/boomberg.png";
-import k2 from "@/assets/invest.jpeg";
-import k3 from "@/assets/Reuters-paywall.jpg";
+import kno from "../assets/kno.png";
+import k1 from "../assets/boomberg.png";
+import k2 from "../assets/invest.jpeg";
+import k3 from "../assets/Reuters-paywall.jpg";
 import Link from "next/link";
 
 const Knowledge = () => {

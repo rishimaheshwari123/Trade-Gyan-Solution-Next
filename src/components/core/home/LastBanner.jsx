@@ -1,3 +1,4 @@
+
 const PartnershipBlock = () => {
   return (
     <div className="partnership-blk py-4 relative z-0">

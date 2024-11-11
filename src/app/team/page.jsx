@@ -1,11 +1,10 @@
 import React from "react";
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import Navbar from "@/components/comman/Navbar";
 
 const Team = () => {
   return (
     <div>
-      <Navbar />
+   
       <div className="container mx-auto p-8">
         {/* Team Description */}
         <div className="text-center mb-12">

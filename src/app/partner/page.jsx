@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { sendContactForm } from "@/services/operations/auth";
-import Navbar from "@/components/comman/Navbar";
+import React, {useState} from "react";
+import {sendContactForm} from "../../services/operations/auth";
 
 const Partner = () => {
   const initialFormData = {
@@ -30,7 +29,6 @@ const Partner = () => {
 
   return (
     <>
-      <Navbar />
       <div className="relative flex justify-center items-center w-full min-h-[40vh] -mt-2 bg-gradient-to-r bg-black">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-60"
@@ -154,14 +152,12 @@ const Partner = () => {
                 onChange={handleChange}
                 placeholder="Enter your message"
                 className="w-full p-2 border border-gray-300 rounded-lg"
-                required
-              ></textarea>
+                required></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-orange-500 text-white p-2 rounded-lg hover:bg-orange-600 transition duration-200"
-            >
+              className="w-full bg-orange-500 text-white p-2 rounded-lg hover:bg-orange-600 transition duration-200">
               Submit
             </button>
           </form>

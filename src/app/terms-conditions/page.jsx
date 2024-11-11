@@ -1,11 +1,11 @@
 import React from "react";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import Navbar from "@/components/comman/Navbar";
+
 
 const TermsAndConditions = () => {
   return (
     <div>
-      <Navbar />
+    
       <div className="min-h-screen bg-gray-100 p-6">
         <div className="max-w-4xl mx-auto bg-white p-8 shadow-lg rounded-lg">
           <h1 className="text-2xl font-bold mb-6">Terms & Conditions</h1>

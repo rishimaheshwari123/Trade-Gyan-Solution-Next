@@ -60,11 +60,11 @@ const About = () => {
             conducive environment.
           </p>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            Our organization's commitment to sustainability informs our
+            Our organization&apos;s commitment to sustainability informs our
             unmatched credibility, technology, intensive research, and customer
             satisfaction. The global presence that{" "}
             <strong>Trade Gyan Solution</strong> maintains acts as an edge on
-            clients' success, giving us keen insight across regions and markets,
+            clients&apos; success, giving us keen insight across regions and markets,
             and allowing us to make a difference around the world.
           </p>
         </div>

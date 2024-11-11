@@ -1,10 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Navbar from "@/components/comman/Navbar";
-import RiskProfile from "@/components/RiskProfile";
-import ComplaintsTable from "@/components/trader/comman/ComplaintsTable";
-import { useParams } from "next/navigation";
-
+import React, {useEffect, useState} from "react";
+import {useParams} from "next/navigation";
+import ComplaintsTable from "../../components/trader/comman/ComplaintsTable";
+import RiskProfileForm from "../../components/RiskProfile";
 // Updated Data array for policies with heading and points
 const policiesData = [
   {
@@ -47,7 +45,7 @@ const policiesData = [
 
           " TradeGyan Solution does not offer guaranteed accuracy, timeliness, or completeness of, or otherwise approve in either way, the opinions, recommendations, or views expressed in information.  TradeGyan Solution does not offer investment advice and at the same time does not advocate the sale or purchase of any investment or security by the client or any third party. The user information is not intended to provide legal, investment, or tax advice that you should get from a professional advisor prior to making any investment of the type discussed in the information.",
 
-          "All materials, products, and services from this Site are provided 'As is' with no representations or warranties of any kind, either express or implied.",
+          "All materials, products, and services from this Site are provided &apos;As is&apos; with no representations or warranties of any kind, either express or implied.",
 
           "You have to subscribe to the service in order to get full access to the site and to receive alert emails when Recommendation are released. You agree to provide accurate and current information about yourself as requested on the registration form and subscription payment process. We reserve the right to terminate this Agreement and your use of the Site if the information provided by you is false in any way or for any other reason we deem necessary to maintain the operation and integrity of the Site.",
 
@@ -158,7 +156,7 @@ const policiesData = [
     content: [
       {
         heading: "Complaint Data",
-        points: [<ComplaintsTable />],
+        // points: [<ComplaintsTable />],
       },
     ],
   },
@@ -168,14 +166,14 @@ const policiesData = [
     content: [
       {
         heading: "Risk Considerations",
-        points: [<RiskProfile />],
+        // points: [<RiskProfileForm />],
       },
     ],
   },
 ];
 
 const Disclaimer = () => {
-  const { name } = useParams();
+  const {name} = useParams();
   // State to manage active tab
   const [activeTab, setActiveTab] = useState(name || "corporate");
   useEffect(() => {
@@ -183,24 +181,20 @@ const Disclaimer = () => {
   }, []);
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Container for policies */}
       <div className="container mx-auto py-8 flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/4 bg-white shadow-md rounded-lg p-6 mb-6 sm:mb-0 sm:mr-6">
           <h2 className="text-2xl font-semibold mb-4">Our Policies</h2>
           <ul className="space-y-4">
-            {policiesData.map((policy) => (
-              <li key={policy.id}>
+            {policiesData.map((policy,index) => (
+              <li key={index}>
                 <button
                   onClick={() => setActiveTab(policy.id)} // Set the active tab when clicked
                   className={`text-lg flex items-center w-full text-left transition-colors ${
                     activeTab === policy.id
                       ? "text-blue-800 font-semibold"
                       : "text-blue-600"
-                  }`}
-                >
+                  }`}>
                   <span className="mr-2">›</span> {/* Chevron Arrow */}
                   {policy.title}
                 </button>

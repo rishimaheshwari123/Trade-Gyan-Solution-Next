@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import {
   Navigation,
   Pagination,
@@ -8,7 +8,7 @@ import {
   Autoplay,
   EffectFade,
 } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -67,37 +67,36 @@ const Slider = () => {
           Autoplay,
           EffectFade,
         ]}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{delay: 5000, disableOnInteraction: false}}
         effect="fade"
-        fadeEffect={{ crossFade: true }}
+        fadeEffect={{crossFade: true}}
         spaceBetween={0}
         breakpoints={{
-          640: { slidesPerView: 1, spaceBetween: 0 },
-          768: { slidesPerView: 1, spaceBetween: 0 },
-          1024: { slidesPerView: 1, spaceBetween: 0 },
+          640: {slidesPerView: 1, spaceBetween: 0},
+          768: {slidesPerView: 1, spaceBetween: 0},
+          1024: {slidesPerView: 1, spaceBetween: 0},
         }}
         onSlideChange={handleSlideChange}
-        className="relative z-10"
-      >
+        className="relative z-10 h-[80vh] sm:h-[60vh] md:h-[80vh] lg:h-[90vh]">
         {work.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="relative h-[80vh] sm:h-[60vh] md:h-[80vh] lg:h-[90vh]"
-          >
+            className="relative h-[80vh] sm:h-[60vh] md:h-[80vh] lg:h-[90vh]">
             <div className="relative w-full h-full">
               <Image
                 src={item.image}
                 alt={item.title}
-                layout="fill"
+                // layout="fill"
                 objectFit="cover"
+                width={1920}
+                height={1080}
                 className="w-full h-full object-cover"
                 priority
               />
               <div
                 className={`absolute inset-0 p-8 z-10 flex flex-col justify-center transition-opacity duration-1000 ${
                   textVisible ? "opacity-100" : "opacity-0"
-                }`}
-              >
+                }`}>
                 <div className="bg-[#62000f] bg-opacity-60 text-white p-5 sm:p-6 md:p-8 lg:p-12 max-w-full md:max-w-lg ml-auto">
                   <p className="text-[#efcc41] text-xs sm:text-sm md:text-base font-bold mb-2">
                     {item.title}

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaShieldAlt, FaHeadset, FaChartLine } from "react-icons/fa";
 import Image from "next/image";
-import image from "@/assets/our-edge-img.png";
+import image from "../../../assets/our-edge-img.png";
 
 const edge = [
   {

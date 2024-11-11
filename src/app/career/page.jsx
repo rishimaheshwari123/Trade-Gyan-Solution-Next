@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
-import Navbar from "@/components/comman/Navbar";
+import React, {useState, useRef, useEffect} from "react";
+import {FaPlus, FaMinus} from "react-icons/fa";
 
-export const jobPostings = [
+
+ const jobPostings = [
   {
     title: "Business Analyst Position Open",
     details: `**No. of Vacancies:** Upto 20
@@ -25,7 +25,7 @@ export const jobPostings = [
     To apply, please send your resume to hr@tradegyan.co with the subject "Apply For Research Services Subscription".`,
   },
 ];
-const JobPosting = ({ job, isOpen, onClick }) => {
+const JobPosting = ({job, isOpen, onClick}) => {
   const contentRef = useRef(null);
   const [contentHeight, setContentHeight] = useState("0px");
 
@@ -40,16 +40,14 @@ const JobPosting = ({ job, isOpen, onClick }) => {
     <div className="border rounded-md mb-4 transition-all duration-500 ease-in-out">
       <div
         className="flex justify-between items-center p-4 cursor-pointer bg-gray-100"
-        onClick={onClick}
-      >
+        onClick={onClick}>
         <h3 className="text-lg font-medium">{job.title}</h3>
         <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
       </div>
       <div
         ref={contentRef}
-        style={{ maxHeight: contentHeight }}
-        className="overflow-hidden transition-all duration-500 ease-in-out"
-      >
+        style={{maxHeight: contentHeight}}
+        className="overflow-hidden transition-all duration-500 ease-in-out">
         <div className="p-4 bg-white">
           <p className="whitespace-pre-line">{job.details}</p>
         </div>
@@ -67,7 +65,6 @@ const Career = () => {
 
   return (
     <>
-      <Navbar />
       <div>
         <p className="text-center text-3xl font-bold">Application Process</p>
         <div className="max-w-7xl mx-auto p-5 flex flex-col gap-2">

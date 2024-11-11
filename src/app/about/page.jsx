@@ -1,6 +1,6 @@
 "use client";
-import Navbar from "@/components/comman/Navbar";
-import React, { useEffect } from "react";
+
+import React, {useEffect} from "react";
 
 const About = () => {
   const about = [
@@ -29,7 +29,6 @@ const About = () => {
   }, []);
   return (
     <div>
-      <Navbar />
       <div className="lg:relative lg:flex lg:justify-center grid">
         <img
           src="https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/62063591231f730a1ad3a81c_unsplash_c3tNiAb098I%20(1).svg"
@@ -60,11 +59,11 @@ const About = () => {
             conducive environment.
           </p>
           <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-            Our organization's commitment to sustainability informs our
+            Our organization&apos;s commitment to sustainability informs our
             unmatched credibility, technology, intensive research, and customer
             satisfaction. The global presence that{" "}
             <strong>Trade Gyan Solution</strong> maintains acts as an edge on
-            clients' success, giving us keen insight across regions and markets,
+            clients&apos; success, giving us keen insight across regions and markets,
             and allowing us to make a difference around the world.
           </p>
         </div>
@@ -87,8 +86,7 @@ const About = () => {
             className={`card ${currElem.id === 2 ? "lg:mt-14" : ""} ${
               currElem.id === 3 ? "lg:mt-14" : ""
             }`}
-            key={index}
-          >
+            key={index}>
             <img src={currElem.img} alt="not found" />
             <p className="font-bold text-2xl">{currElem?.title}</p>
             <p>{currElem?.desc}</p>

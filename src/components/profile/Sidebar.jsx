@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaUserCircle, FaRegCreditCard, FaTimes, FaBars, FaComments ,FaHome } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
+// import { Link } from "react-router-dom"; // Import Link from react-router-dom
+Link
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
 

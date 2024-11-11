@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"; // Importing Next.js Image component
-import image from "@/assets/12.png";
+import image from "../../../assets/12.png";
 
 const Banner = ({ setShowModal }) => {
   return (

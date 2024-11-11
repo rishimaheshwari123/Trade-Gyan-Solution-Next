@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { service } from "../../../../data/investordata";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 
 const Service = () => {
 

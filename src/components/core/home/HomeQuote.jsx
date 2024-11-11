@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { sendContactForm } from "@/services/operations/auth";
+import { sendContactForm } from "../../../services/operations/auth";
 
 const HomeQuote = () => {
   const initialFormData = {

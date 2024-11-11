@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
-import Navbar from "@/components/comman/Navbar";
+import React, {useState, useRef, useEffect} from "react";
+import {FaPlus, FaMinus} from "react-icons/fa";
 
-export const jobPostings = [
+
+ const jobPostings = [
   {
     title: "What kind of company is Trade Gyan Solutions",
     details:
@@ -95,7 +95,7 @@ export const jobPostings = [
       "Yes, we provide live support to our customers as we believe in giving the best solutions at the right time for your queries. For live support, you need to visit our website or can follow the link: Trade Gyan Help Desk.",
   },
 ];
-const JobPosting = ({ job, isOpen, onClick }) => {
+const JobPosting = ({job, isOpen, onClick}) => {
   const contentRef = useRef(null);
   const [contentHeight, setContentHeight] = useState("0px");
 
@@ -111,16 +111,14 @@ const JobPosting = ({ job, isOpen, onClick }) => {
     <div className="border rounded-md mb-4 transition-all duration-500 ease-in-out">
       <div
         className="flex justify-between items-center p-4 cursor-pointer bg-gray-100"
-        onClick={onClick}
-      >
+        onClick={onClick}>
         <h3 className="text-lg font-medium">{job.title}</h3>
         <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
       </div>
       <div
         ref={contentRef}
-        style={{ maxHeight: contentHeight }}
-        className="overflow-hidden transition-all duration-500 ease-in-out"
-      >
+        style={{maxHeight: contentHeight}}
+        className="overflow-hidden transition-all duration-500 ease-in-out">
         <div className="p-4 bg-white">
           <p className="whitespace-pre-line">{job.details}</p>
         </div>
@@ -137,22 +135,19 @@ const Faq = () => {
   };
 
   return (
-    <>
-      <Navbar />
-      <div className="max-w-7xl mx-auto p-4">
-        <p className="text-center font-bold text-xl my-5">
-          Frequently Asked Questions
-        </p>
-        {jobPostings.map((job, index) => (
-          <JobPosting
-            key={index}
-            job={job}
-            isOpen={openIndex === index}
-            onClick={() => handleToggle(index)}
-          />
-        ))}
-      </div>
-    </>
+    <div className="max-w-7xl mx-auto p-4">
+      <p className="text-center font-bold text-xl my-5">
+        Frequently Asked Questions
+      </p>
+      {jobPostings.map((job, index) => (
+        <JobPosting
+          key={index}
+          job={job}
+          isOpen={openIndex === index}
+          onClick={() => handleToggle(index)}
+        />
+      ))}
+    </div>
   );
 };
 

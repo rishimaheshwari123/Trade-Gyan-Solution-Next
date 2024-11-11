@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import axios from "axios";
-import Navbar from "@/components/comman/Navbar";
+
 
 const StockTable = () => {
   const [stocks, setStocks] = useState([]);
@@ -66,7 +66,7 @@ const StockTable = () => {
 
   return (
     <div>
-      <Navbar />
+  
       <div className="p-6 bg-gray-100 min-h-screen">
         <h2 className="text-3xl font-bold mb-6 text-center">
           Popular in Global Market

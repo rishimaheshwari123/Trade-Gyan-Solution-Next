@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import Navbar from "@/components/comman/Navbar";
 
 const Support = () => {
   useEffect(() => {
@@ -9,7 +8,7 @@ const Support = () => {
   }, []);
   return (
     <>
-      <Navbar />
+   
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl">
           <h1 className="text-3xl font-bold text-center  mb-6">

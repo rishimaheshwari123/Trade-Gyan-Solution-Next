@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import shares from "@/assets/shares22.png";
+import shares from "../../../assets/shares22.png";
 const Financial = () => {
   return (
     <div>

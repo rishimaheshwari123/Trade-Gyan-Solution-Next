@@ -8,8 +8,8 @@ import {
   FaGem,
   FaCoins,
 } from "react-icons/fa";
-import img from "@/assets/shares.png";
-import bgImage from "@/assets/dotted-map.png";
+import img from "../../../assets/shares.png";
+import bgImage from "../../../assets/dotted-map.png";
 
 const Opportunities = () => {
   return (

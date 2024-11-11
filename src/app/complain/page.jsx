@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "@/components/comman/Navbar";
+
 
 const ComplaintTrends = () => {
   const [currentMonthData, setCurrentMonthData] = useState({});
@@ -43,7 +43,7 @@ const ComplaintTrends = () => {
 
   return (
     <div>
-      <Navbar />
+      
       <div className="p-4 w-full md:w-10/12 mx-auto text-center bg-white">
         <div>
           <h2 className="text-lg md:text-xl font-bold mb-4">
