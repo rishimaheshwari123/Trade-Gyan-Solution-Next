@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import UserSearch from './SearchUser';
 import ConversationList from './SelectUser';

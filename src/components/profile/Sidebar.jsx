@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaUserCircle, FaRegCreditCard, FaTimes, FaBars, FaComments ,FaHome } from "react-icons/fa";
@@ -23,23 +24,23 @@ const Sidebar = () => {
       {/* Sidebar Items */}
       <div className="mt-16">
         {/* Profile */}
-        <Link to="/" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
+        <Link href="/" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
           <FaHome  className="text-2xl" />
           {isOpen && <span className="text-lg">Home</span>}
         </Link>
-        <Link to="/profile" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
+        <Link href="/profile" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
           <FaUserCircle className="text-2xl" />
           {isOpen && <span className="text-lg">Profile</span>}
         </Link>
 
         {/* Subscription */}
-        <Link to="/subscription" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
+        <Link href="/subscription" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
           <FaRegCreditCard className="text-2xl" />
           {isOpen && <span className="text-lg">Subscription</span>}
         </Link>
 
         {/* Chats */}
-        <Link to="/chats" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
+        <Link href="/chats" className="flex items-center space-x-4 p-4 hover:bg-gray-700 cursor-pointer">
           <FaComments className="text-2xl" />
           {isOpen && <span className="text-lg">Chats</span>}
         </Link>

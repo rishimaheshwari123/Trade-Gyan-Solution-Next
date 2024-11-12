@@ -1,17 +1,19 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import equity from '../../../../assets/services/quity.png'
-import two from '../../../../assets/services/commodity.png'
-import three from '../../../../assets/services/agri.jpg'
-import four from '../../../../assets/services/forex.jpeg'
+import React, {useEffect} from "react";
+
+import equity from "../../../../assets/services/quity.png"
+import two from "../../../../assets/services/commodity.png";
+import three from "../../../../assets/services/agri.jpg";
+import four from "../../../../assets/services/forex.jpeg";
+import Link from "next/link";
+import Image from "next/image";
+
 const TradingTips = () => {
-  
   useEffect(() => {
     const hash = window.location.hash;
-    if (hash === '#services') {
-      const element = document.getElementById('services');
+    if (hash === "#services") {
+      const element = document.getElementById("services");
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        element.scrollIntoView({behavior: "smooth", block: "start"});
       }
     }
   }, []);
@@ -21,29 +23,28 @@ const TradingTips = () => {
       title: "Equity Trading",
       description:
         "The Equity Trading Recommendation Services Includes Intraday & Positional Stock Trading Advice, BTST For Stocks Listed in NSE And BSE",
-      imgSrc:equity,
+      imgSrc: equity,
       path: "/equity",
     },
     {
       title: "Commodity",
       description:
-      "The MCX Trading Recommendation Services Includes Intraday & Positional Gold, Silver, Crude, Zinc, NG, Copper, Etc Trading Advice Listed in MCX.",
-    
-      imgSrc:two,
+        "The MCX Trading Recommendation Services Includes Intraday & Positional Gold, Silver, Crude, Zinc, NG, Copper, Etc Trading Advice Listed in MCX.",
+
+      imgSrc: two,
       path: "/commodity",
     },
     {
       title: "Agri Commodity",
       description:
         "The NCDEX Trading Recommendation Services Includes Intraday & Positional Zeera, Dhaniya, Chana, Turmeric, SoyaBean, Etc Trading Advice",
-     
-      imgSrc:three,
+
+      imgSrc: three,
       path: "/agri/ncdex",
     },
     {
       title: "Forex",
-      description:
-      `           Currency derivatives are used for currency arbitrage or to hedge
+      description: `           Currency derivatives are used for currency arbitrage or to hedge
             against foreign exchange risks. Importers and exporters use them to
             protect against domestic currency fluctuations. Currency derivatives
             can be traded in currency pairs, such as USD/INR and EUR/INR, or
@@ -54,10 +55,7 @@ const TradingTips = () => {
   ];
 
   return (
-
-
-
-      <div className="container mx-auto my-10 px-4" id="services">
+    <div className="container mx-auto my-10 px-4" id="services">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-10">
         Our Services
       </h2>
@@ -65,9 +63,8 @@ const TradingTips = () => {
         {tipsData.map((service, index) => (
           <div
             key={index}
-            className="relative group text-white overflow-hidden"
-          >
-            <img
+            className="relative group text-white overflow-hidden">
+            <Image
               src={service?.imgSrc}
               alt={service?.title}
               className="w-full h-60 sm:h-72 lg:h-96 object-cover group-hover:opacity-80 transition-opacity duration-500"
@@ -81,10 +78,8 @@ const TradingTips = () => {
                 {service?.description}
               </p>
               <Link
-             
-              to={`/trader${service.path}`}
-                className="mt-4 text-xs sm:text-sm text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition-all drop-shadow-lg"
-              >
+                href={`/trader${service.path}`}
+                className="mt-4 text-xs sm:text-sm text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition-all drop-shadow-lg">
                 KNOW MORE
               </Link>
             </div>

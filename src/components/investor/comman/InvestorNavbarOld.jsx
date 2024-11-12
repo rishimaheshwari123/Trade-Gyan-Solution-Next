@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import {
   FaUser,
   FaDollarSign,
@@ -11,6 +11,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import logo from "../../../assets/tradegyan.png";
+import Link from "next/link";
 
 const InvestorNavbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -41,14 +42,14 @@ const InvestorNavbar = () => {
           <div className="flex items-center gap-3 justify-end">
             <div className="flex items-center space-x-4">
               <Link
-                to="/client-login"
+                href="/client-login"
                 className="flex items-center bg-red-800 text-white px-4 py-1 rounded-full hover:bg-red-700"
               >
                 <FaUser className="mr-2" />
                 CLIENT LOGIN
               </Link>
               <Link
-                to="/international-investing"
+                href="/international-investing"
                 className="flex items-center bg-red-800 text-white px-4 py-1 rounded-full hover:bg-red-700"
               >
                 <FaDollarSign className="mr-2" />
@@ -89,19 +90,19 @@ const InvestorNavbar = () => {
 
           <div className="container mx-auto flex justify-center py-2">
             <div className="flex space-x-8 font-bold text-[13px]">
-              <Link to="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 MAIN HOME
               </Link>
-              <Link to="/investor" className="hover:underline">
+              <Link href="/investor" className="hover:underline">
                 HOME
               </Link>
-              <Link to="/investor/about-us" className="hover:underline">
+              <Link href="/investor/about-us" className="hover:underline">
                 ABOUT US
               </Link>
-              <Link to="/investor/services" className="hover:underline">
+              <Link href="/investor/services" className="hover:underline">
                 OUR SERVICES
               </Link>
-              <Link to="/investor/contact-us" className="hover:underline">
+              <Link href="/investor/contact-us" className="hover:underline">
                 CONTACT US
               </Link>
             </div>
@@ -119,12 +120,12 @@ const InvestorNavbar = () => {
           <FaTimes />
         </button>
         <div className="mt-10 flex flex-col space-y-3">
-          <Link to="/" onClick={toggleSidebar} className="hover:underline">
+          <Link href="/" onClick={toggleSidebar} className="hover:underline">
             MAIN HOME
           </Link>
           <hr />
           <Link
-            to="/investor"
+            href="/investor"
             onClick={toggleSidebar}
             className="hover:underline"
           >
@@ -132,7 +133,7 @@ const InvestorNavbar = () => {
           </Link>
           <hr />
           <Link
-            to="/investor/about-us"
+            href="/investor/about-us"
             onClick={toggleSidebar}
             className="hover:underline"
           >
@@ -141,7 +142,7 @@ const InvestorNavbar = () => {
           <hr />
 
           <Link
-            to="/investor/services"
+            href="/investor/services"
             onClick={toggleSidebar}
             className="hover:underline"
           >
@@ -150,7 +151,7 @@ const InvestorNavbar = () => {
           <hr />
 
           <Link
-            to="/contact-us"
+            href="/contact-us"
             onClick={toggleSidebar}
             className="hover:underline"
           >
@@ -161,7 +162,7 @@ const InvestorNavbar = () => {
           <div className="flex flex-col gap-4">
             <Link
               onClick={toggleSidebar}
-              to="/client-login"
+              href="/client-login"
               className="flex items-center bg-transparent border-2 border-white text-white px-4 py-2 rounded-full hover:bg-red-700"
             >
               <FaUser className="mr-2" />
@@ -170,7 +171,7 @@ const InvestorNavbar = () => {
 
             <Link
               onClick={toggleSidebar}
-              to="/international-investing"
+              href="/international-investing"
               className="flex items-center bg-transparent border-2 border-white text-white px-4 py-2 rounded-full hover:bg-red-700"
             >
               <FaDollarSign className="mr-2" />

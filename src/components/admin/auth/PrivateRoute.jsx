@@ -1,15 +1,19 @@
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+"use client";
+import {useRouter} from "next/navigation";
+import {useSelector} from "react-redux";
 
-function PrivateRoute({ children }) {
-  const { token, user } = useSelector((state) => state.auth);
+function PrivateRoute({children}) {
+  const router = useRouter();
+  const {token, user} = useSelector((state) => state.auth);
 
   if (!token) {
-    return <Navigate to="/client-login" />;
+    return router.push("/client-login");
+    // <Navigate to="/client-login" />;
   }
 
   if (user?.role !== "Admin") {
-    return <Navigate to="/" />;
+    return router.push("/");
+    // <Navigate to="/" />;
   }
 
   return children;

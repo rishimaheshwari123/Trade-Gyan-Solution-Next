@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import { getAllUser } from "../../../services/operations/admin";
 import { verifyUserApi } from "../../../services/operations/auth";

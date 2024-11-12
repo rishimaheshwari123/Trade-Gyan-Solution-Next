@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import {
   deleteServices,
@@ -6,12 +7,12 @@ import {
 import { FaTrashAlt, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { AiOutlineMessage } from "react-icons/ai"; // Import SMS icon
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { enrolledUser } from "../../../services/operations/order";
 import { useSelector } from "react-redux";
 import EnrollmentForm from "../EnrolledForm";
+import Link from "next/link";
 // import Swal from 'sweetalert2';
 const BASE_URL = process.env.REACT_APP_BASE_URL; // Update this to your actual backend URL
 
@@ -155,7 +156,7 @@ const GetAllService = () => {
               >
                 <FaTrashAlt size={23} />
               </button>
-              <Link to={`/admin/service/${service?._id}`}>
+              <Link href={`/admin/service/${service?._id}`}>
                 <h2 className="text-xl font-semibold text-blue-600">
                   {service.serviceName}
                 </h2>

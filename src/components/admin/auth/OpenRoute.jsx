@@ -1,18 +1,19 @@
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+"use client";
+import {useRouter} from "next/navigation";
+import {useSelector} from "react-redux";
 
-function OpenRoute({ children }) {
-  const { token, user } = useSelector((state) => state.auth);
-
+function OpenRoute({children}) {
+  const {token, user} = useSelector((state) => state.auth);
+  const router = useRouter();
   if (!token) {
     return children;
   }
 
   if (user?.role === "Admin") {
-    return <Navigate to="/admin/dashboard" />;
+    return router.push("/admin/dashboard");
   }
 
-  return <Navigate to="/" />;
+  return router.push("/");
 }
 
 export default OpenRoute;

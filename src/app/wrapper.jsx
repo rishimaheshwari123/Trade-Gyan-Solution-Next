@@ -10,9 +10,11 @@ import Complain from "../components/trader/comman/Complain";
 import useSocket from "../socket io/useSocket";
 import {useEffect, useState} from "react";
 import Navbar from "../components/comman/Navbar";
+import Whatsapp from "../components/comman/Whatsapp";
+import { usePathname } from 'next/navigation'
+
 const Wrapper = ({children}) => {
   const [showModal, setShowModal] = useState(true);
-
   useSocket();
 
   useEffect(() => {
@@ -23,16 +25,23 @@ const Wrapper = ({children}) => {
     console.log("Modal state before toggle:", showModal);
     setShowModal(false);
   }
+
+  const pathname = usePathname()
+   const removeNavbar = pathname.includes("investor") || pathname.includes("trader")
+   
   return (
     <Provider store={store}>
       <Notification />
-      <Navbar/>
+    { removeNavbar ? null : <Navbar />}
       {showModal && (
         <Complain onClose={handleCloseModal} showModal={showModal} />
       )}
       {children}
       <ToastContainer />
       <Footer />
+      <div className="fixed bottom-0 md:left-10 left-0 z-50">
+        <Whatsapp />
+      </div>
     </Provider>
   );
 };

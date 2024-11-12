@@ -6,7 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 
 const Slider = () => {
   const [textVisible, setTextVisible] = useState(false);
@@ -94,7 +95,7 @@ const Slider = () => {
                 </p>
                 {item.buttonText && (
                   <Link
-                    to={item.buttonLink}
+                    href={item.buttonLink}
                     className="bg-[#efcc41] text-[#62000f] px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-[#ffc107] transition transform hover:scale-105 duration-300"
                   >
                     {item.buttonText}

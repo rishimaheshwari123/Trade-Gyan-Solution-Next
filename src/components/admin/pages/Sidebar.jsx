@@ -1,27 +1,28 @@
-import React, { useState, useEffect, useRef } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import { CiMenuFries } from "react-icons/ci";
-import { RxCross1 } from "react-icons/rx";
-import { AiOutlineUser } from "react-icons/ai";
-import { MdLogout } from "react-icons/md";
-import { FaHome } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../../../services/operations/auth";
-import { IoIosChatboxes } from "react-icons/io";
-import {   FaRegNewspaper } from "react-icons/fa";
-import { FcBullish, FcServices, FcViewDetails, FcAbout } from "react-icons/fc";
-import { AiOutlineWarning, AiOutlineFileText } from "react-icons/ai";
-import { MdOutlineVerifiedUser, MdOutlineFeedback } from "react-icons/md";
-
+"use client";
+import React, {useState, useEffect, useRef} from "react";
+import {CiMenuFries} from "react-icons/ci";
+import {RxCross1} from "react-icons/rx";
+import {AiOutlineUser} from "react-icons/ai";
+import {MdLogout} from "react-icons/md";
+import {FaHome} from "react-icons/fa";
+import {useDispatch, useSelector} from "react-redux";
+import {logout} from "../../../services/operations/auth";
+import {IoIosChatboxes} from "react-icons/io";
+import {FaRegNewspaper} from "react-icons/fa";
+import {FcBullish, FcServices, FcViewDetails, FcAbout} from "react-icons/fc";
+import {AiOutlineWarning, AiOutlineFileText} from "react-icons/ai";
+import {MdOutlineVerifiedUser, MdOutlineFeedback} from "react-icons/md";
+import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(
     localStorage.getItem("sidebarCollapsed") === "true"
   );
-  const { user } = useSelector((state) => state.auth);
+  const {user} = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const sidebarRef = useRef(null);
-  const navigate = useNavigate();
+  const navigate = useRouter();
 
   // Function to handle logout
   const handleLogout = async () => {
@@ -52,10 +53,10 @@ const Sidebar = () => {
   }, []);
 
   const navItems = [
-    { to: "/", icon: <FaHome />, label: "Back To Home" },
-    { to: "/admin/dashboard", icon: <FcBullish />, label: "Dashboard" },
-    { to: "/admin/add-service", icon: <FcServices />, label: "Add Service" },
-    { to: "/admin/get-service", icon: <FcViewDetails />, label: "Get Service" },
+    {to: "/", icon: <FaHome />, label: "Back To Home"},
+    {to: "/admin/dashboard", icon: <FcBullish />, label: "Dashboard"},
+    {to: "/admin/add-service", icon: <FcServices />, label: "Add Service"},
+    {to: "/admin/get-service", icon: <FcViewDetails />, label: "Get Service"},
     {
       to: "/admin/users",
       icon: <MdOutlineVerifiedUser className="text-red-500" />,
@@ -98,22 +99,19 @@ const Sidebar = () => {
       ref={sidebarRef}
       className={`fixed h-screen top-0 ${
         isCollapsed ? "w-20" : "w-64"
-      } bg-gray-900 transition-all duration-300 z-50`}
-    >
+      } bg-gray-900 transition-all duration-300 z-50`}>
       <div className="flex items-center justify-between p-4">
         {/* Logo section */}
         <div
           className={` ${
             isCollapsed ? "hidden" : "block"
-          } text-white font-bold text-xl`}
-        >
+          } text-white font-bold text-xl`}>
           <h2>Trade Gyan</h2>
         </div>
         {/* Toggle button */}
         <button
           onClick={handleToggle}
-          className="bg-transparent border-none w-8 h-8 flex justify-center items-center cursor-pointer text-white"
-        >
+          className="bg-transparent border-none w-8 h-8 flex justify-center items-center cursor-pointer text-white">
           {isCollapsed ? <CiMenuFries size={22} /> : <RxCross1 size={22} />}
         </button>
       </div>
@@ -121,22 +119,20 @@ const Sidebar = () => {
       {/* Navigation links */}
       <ul className="text-white list-none flex flex-col gap-2 p-4 mb-14 max-h-[70vh] overflow-y-scroll sidebar">
         {navItems.map((item) => (
-          <NavLink
+          <Link
             key={item.to}
-            to={item.to}
-            className={({ isActive }) =>
+            href={item.to}
+            className={({isActive}) =>
               `text-white py-4 flex items-center hover:border-r-4 hover:border-black ${
                 isActive ? "border-r-4 border-white" : ""
               }`
-            }
-          >
+            }>
             <div className="text-2xl">{item.icon}</div>
             <span
-              className={`ml-4 text-xl ${isCollapsed ? "hidden" : "block"}`}
-            >
+              className={`ml-4 text-xl ${isCollapsed ? "hidden" : "block"}`}>
               {item.label}
             </span>
-          </NavLink>
+          </Link>
         ))}
       </ul>
 
@@ -147,13 +143,11 @@ const Sidebar = () => {
             isCollapsed
               ? "w-11 h-11 rounded-full bg-slate-400"
               : "bg-slate-400 py-2 px-4 rounded-lg"
-          }`}
-        >
+          }`}>
           <div
             className={`cursor-pointer flex items-center justify-center text-black ${
               isCollapsed ? "w-10 h-10 rounded-full" : ""
-            }`}
-          >
+            }`}>
             {isCollapsed ? (
               <AiOutlineUser size={20} />
             ) : (
@@ -169,8 +163,7 @@ const Sidebar = () => {
             isCollapsed
               ? "w-12 h-12 rounded-full"
               : "py-2 px-4 w-full rounded-lg"
-          }`}
-        >
+          }`}>
           {isCollapsed ? (
             <MdLogout />
           ) : (

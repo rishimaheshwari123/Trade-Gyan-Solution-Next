@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { FaRegLightbulb, FaUsers, FaCog, FaChartLine } from "react-icons/fa";
 

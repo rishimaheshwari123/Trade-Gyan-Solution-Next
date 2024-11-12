@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   Navigation,
@@ -6,7 +7,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,6 +18,7 @@ import h2 from "../../../../assets/banner-2.png";
 import h3 from "../../../../assets/banner-3.png";
 import h4 from "../../../../assets/banner-4.png";
 import h5 from "../../../../assets/banner-5.png";
+import Image from "next/image";
 
 const data = [
   {
@@ -47,7 +49,7 @@ const Slider = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={1}
-        autoplay={{ delay: 2000 }}
+        autoplay={{delay: 2000}}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -58,14 +60,12 @@ const Slider = () => {
           1024: {
             slidesPerView: 2,
           },
-        }}
-      >
+        }}>
         {data.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="relative flex items-center justify-center"
-          >
-            <img
+            className="relative flex items-center justify-center">
+            <Image
               src={item.image}
               alt={item.title}
               className="w-screen h-[70vh] object-cover"

@@ -1,14 +1,15 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import { getAllUser } from "../../../services/operations/admin";
 import { FaUser, FaEnvelope, FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
 import Pagination from "../Pagination";
-import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa"; // WhatsApp icon
 import { MdEmail } from "react-icons/md"; // Email icon
 import axios from "axios";
 import Swal from "sweetalert2"; // Make sure you have SweetAlert2 imported
 import { getSingleUserApi } from "../../../services/operations/auth";
 import { FcSms } from "react-icons/fc";
+import Link from "next/link";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL; // Update this to your actual backend URL
 

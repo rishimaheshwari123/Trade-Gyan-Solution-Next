@@ -1,6 +1,6 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import { getUserDetails } from "../../../services/operations/admin";
-import { useParams } from "react-router-dom";
 import {
   FaUser,
   FaEnvelope,
@@ -9,8 +9,8 @@ import {
   FaRegFile,
 } from "react-icons/fa";
 
-function UserDetails() {
-  const { id } = useParams();
+function UserDetails({id}) {
+  
   const [user, setUser] = useState(null); // State to hold user data
   const [loading, setLoading] = useState(true); // State to manage loading state
   const [error, setError] = useState(null); // State to manage errors

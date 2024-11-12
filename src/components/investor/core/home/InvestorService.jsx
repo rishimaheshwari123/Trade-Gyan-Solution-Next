@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import { service } from "../../../../data/investordata";
-import { Link } from "next/link";
+import { service } from '../../../../data/investordata'
+import Link from 'next/link'
+import React from 'react'
 
-const Service = () => {
-
-
+function InvestorService() {
   return (
-    <div  className="container mx-auto my-10 px-4" > 
+    <div className="container mx-auto my-10 px-4">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-10">
         Our Services
       </h2>
@@ -14,8 +12,7 @@ const Service = () => {
         {service.map((service, index) => (
           <div
             key={index}
-            className="relative group text-white overflow-hidden"
-          >
+            className="relative group text-white overflow-hidden">
             <img
               src={service?.img}
               alt={service?.name}
@@ -30,9 +27,8 @@ const Service = () => {
                 {service?.tagline}
               </p>
               <Link
-                to={`/investor/services/${service.id}`}
-                className="mt-4 text-xs sm:text-sm text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition-all drop-shadow-lg"
-              >
+                href={`/investor/services/${service.id}`}
+                className="mt-4 text-xs sm:text-sm text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition-all drop-shadow-lg">
                 KNOW MORE
               </Link>
             </div>
@@ -40,7 +36,7 @@ const Service = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Service;
+export default InvestorService

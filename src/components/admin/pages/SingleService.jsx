@@ -1,12 +1,12 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import { getSingelServiceAdmin } from '../../../services/operations/auth';
 import { FaCalendarAlt, FaClock } from 'react-icons/fa'; // React Icons
 
-function SingleServiceAdmin() {
+function SingleServiceAdmin({id}) {
     const [service, setService] = useState(null);
-    const { id } = useParams();
+   
     const { token, user } = useSelector(state => state.auth);
 
     const singleService = async () => {

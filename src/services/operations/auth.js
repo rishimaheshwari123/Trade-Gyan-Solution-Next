@@ -1,8 +1,8 @@
-import { setUser, setToken } from "../../redux/authSlice";
-import { apiConnector } from "../apiConnector";
-import { endpoints } from "../apis";
+import {setUser, setToken} from "../../redux/authSlice";
+import {apiConnector} from "../apiConnector";
+import {endpoints} from "../apis";
 import Swal from "sweetalert2";
-import { toast } from "react-toastify";
+import {toast} from "react-toastify";
 const {
   LOGIN_API,
   SIGNUP_API,
@@ -19,7 +19,7 @@ const {
   GET_SINGLE_ADMIN_SERVICE,
   SINGLE_USER_API,
   DELETE_SERVICE,
-  VERIFY_USER_API
+  VERIFY_USER_API,
 } = endpoints;
 
 export async function signUp(formData, navigate, dispatch) {
@@ -57,14 +57,16 @@ export async function signUp(formData, navigate, dispatch) {
     // localStorage.setItem("user", JSON.stringify(response.data.user));
     // localStorage.setItem("token", JSON.stringify(response.data.token));
 
-    navigate("/");
+    navigate.push("/");
   } catch (error) {
     console.log("SIGNUP API ERROR............", error);
 
     // Show an error message using Swal when an error occurs
     Swal.fire({
       title: "Error",
-      text: error.response?.message || "Something went wrong. Please try again later.",
+      text:
+        error.response?.message ||
+        "Something went wrong. Please try again later.",
       icon: "error",
       confirmButtonText: "OK",
     });
@@ -74,9 +76,7 @@ export async function signUp(formData, navigate, dispatch) {
   // Swal.close();
 }
 
-
-
-export async function verifyUserApi(name, password, id,token) {
+export async function verifyUserApi(name, password, id, token) {
   Swal.fire({
     title: "Loading",
     allowOutsideClick: false,
@@ -89,7 +89,10 @@ export async function verifyUserApi(name, password, id,token) {
   });
 
   try {
-    const response = await apiConnector("PUT", `${VERIFY_USER_API}/${id}`, { name, password },
+    const response = await apiConnector(
+      "PUT",
+      `${VERIFY_USER_API}/${id}`,
+      {name, password},
       {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
@@ -132,7 +135,6 @@ export async function verifyUserApi(name, password, id,token) {
   }
 }
 
-
 export async function login(name, password, navigate, dispatch) {
   Swal.fire({
     title: "Loading",
@@ -167,7 +169,7 @@ export async function login(name, password, navigate, dispatch) {
     });
     dispatch(setToken(response?.data?.token));
     dispatch(setUser(response.data.user));
-    navigate("/admin/dashboard");
+    navigate.push("/admin/dashboard");
   } catch (error) {
     console.log("LOGIN API ERROR............", error?.response);
     Swal.fire({
@@ -230,7 +232,7 @@ export function logout(navigate) {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     toast.success("Logged Out");
-    navigate("/");
+    navigate.push("/");
   };
 }
 
@@ -311,25 +313,23 @@ export const getAllService = async () => {
 
 export const getAllServices = async (token) => {
   try {
-
     const response = await apiConnector("GET", GET_ALL_SERVICE, null, {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     });
     if (!response?.data?.success) {
-      return []
+      return [];
     }
     const result = response?.data?.services;
     return result;
   } catch (error) {
     console.log(error);
-    return []
+    return [];
   }
 };
 export const deleteServices = async (id) => {
   try {
-
-    const response = await apiConnector("DELETE", `${DELETE_SERVICE}/${id}`)
+    const response = await apiConnector("DELETE", `${DELETE_SERVICE}/${id}`);
     if (!response.data.success) {
       throw new Error(response.data.message);
     }
@@ -337,14 +337,11 @@ export const deleteServices = async (id) => {
       title: response?.data?.message,
       icon: "success",
     });
-
-
   } catch (error) {
     console.log(error);
-    return []
+    return [];
   }
 };
-
 
 export const getSingelService = async (id) => {
   try {
@@ -357,7 +354,10 @@ export const getSingelService = async (id) => {
 };
 export const getSingelServiceAdmin = async (id) => {
   try {
-    const response = await apiConnector("GET", `${GET_SINGLE_ADMIN_SERVICE}/${id}`);
+    const response = await apiConnector(
+      "GET",
+      `${GET_SINGLE_ADMIN_SERVICE}/${id}`
+    );
     const result = response?.data?.service;
     return result;
   } catch (error) {
@@ -365,18 +365,19 @@ export const getSingelServiceAdmin = async (id) => {
   }
 };
 
-
 export const getLast5MonthsComplaints = async () => {
   try {
-    const response = await apiConnector("GET", `http://localhost:8080/last-5-months`);
-  //  console.log(response?.data)
+    const response = await apiConnector(
+      "GET",
+      `http://localhost:8080/last-5-months`
+    );
+    //  console.log(response?.data)
     const result = response;
     return result;
   } catch (error) {
     console.log(error);
   }
 };
-
 
 export const createQueryApi = async (formData) => {
   Swal.fire({
@@ -477,16 +478,14 @@ export const updateQueryApi = async (id, updatedData) => {
   }
 };
 
-
 export const getSingleUserApi = async (id) => {
   try {
     const response = await apiConnector("GET", `${SINGLE_USER_API}/${id}`);
     if (!response?.data?.success) {
-      throw new Error(response?.data?.message)
+      throw new Error(response?.data?.message);
     }
-    return response?.data?.user
-
+    return response?.data?.user;
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
-}
+};

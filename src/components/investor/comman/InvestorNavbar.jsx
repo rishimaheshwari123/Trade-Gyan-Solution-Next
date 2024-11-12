@@ -1,8 +1,11 @@
-import React, { useState } from "react";
-import { FaWhatsapp, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { investorNavLinks } from "../../../data/navbar";
+"use client";
+import React, {useState} from "react";
+import {FaWhatsapp, FaBars, FaTimes, FaChevronDown} from "react-icons/fa";
+
+import {investorNavLinks} from "../../../data/navbar";
 import logo from "../../../assets/tradegyan.png";
+import Link from "next/link";
+import Image from "next/image";
 
 const InvestorNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +34,8 @@ const InvestorNavbar = () => {
       <div className="w-11/12 mx-auto">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold">
-            <img src={logo} alt="not found" className="h-[70px]" />
+          <Link href="/" className="text-2xl font-bold">
+            <Image src={logo} alt="not found" className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] h-auto max-w-full" />
           </Link>
 
           {/* Desktop Links */}
@@ -42,12 +45,10 @@ const InvestorNavbar = () => {
                 key={index}
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
+                onMouseLeave={handleMouseLeave}>
                 <Link
-                  to={link?.path}
-                  className="flex items-center font-bold hover:text-[#efcc41]"
-                >
+                  href={link?.path}
+                  className="flex items-center font-bold hover:text-[#efcc41]">
                   {link?.name}
                   {link?.sublinks && (
                     <FaChevronDown className="ml-1 mt-[3px]" />
@@ -59,9 +60,8 @@ const InvestorNavbar = () => {
                     {link.sublinks.map((sublink, subIndex) => (
                       <li
                         key={subIndex}
-                        className="py-2 px-4 font-bold hover:text-[#efcc41]"
-                      >
-                        <Link to={sublink?.path}>{sublink?.name}</Link>
+                        className="py-2 px-4 font-bold hover:text-[#efcc41]">
+                        <Link href={sublink?.path}>{sublink?.name}</Link>
                       </li>
                     ))}
                   </ul>
@@ -72,8 +72,7 @@ const InvestorNavbar = () => {
               <a
                 href="https://wa.me/123456789"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaWhatsapp color="green" size={24} />
               </a>
             </li>
@@ -92,19 +91,17 @@ const InvestorNavbar = () => {
           className={`lg:hidden fixed inset-0 bg-black bg-opacity-50 transition-opacity  ${
             isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
-          onClick={toggleSidebar}
-        ></div>
+          onClick={toggleSidebar}></div>
 
         {/* Mobile Sidebar */}
         <div
           className={`lg:hidden fixed top-0 left-0 z-50 w-64 h-full bg-white p-4 border-r-4 border-gray-300 transition-transform transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
+          }`}>
           {/* Sidebar Header with Logo and Close Icon */}
           <div className="flex justify-between items-center mb-4">
             {/* <div className="text-2xl font-bold">Sidebar Logo</div> */}
-            <img src={logo} alt="not found" className="h-14" />
+            <Image src={logo} alt="not found" className="h-14" />
             <button onClick={toggleSidebar}>
               <FaTimes size={24} />
             </button>
@@ -116,9 +113,8 @@ const InvestorNavbar = () => {
               <li key={index} className="relative">
                 <div
                   className="flex justify-between items-center cursor-pointer"
-                  onClick={() => toggleDropdown(index)}
-                >
-                  <Link to={link.path} className="block text-black font-bold">
+                  onClick={() => toggleDropdown(index)}>
+                  <Link href={link.path} className="block text-black font-bold">
                     {link?.name}
                   </Link>
                   {link?.sublinks && <FaChevronDown />}
@@ -128,7 +124,7 @@ const InvestorNavbar = () => {
                   <ul className="mt-2 bg-blue-400 space-y-2">
                     {link.sublinks.map((sublink, subIndex) => (
                       <li key={subIndex} className="py-1 px-4">
-                        <Link to={sublink.path} className="text-white">
+                        <Link href={sublink.path} className="text-white">
                           {sublink?.name}
                         </Link>
                       </li>
@@ -142,8 +138,7 @@ const InvestorNavbar = () => {
                 href="https://wa.me/123456789"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-black"
-              >
+                className="flex items-center text-black">
                 <FaWhatsapp size={24} />
                 <span className="ml-2">WhatsApp</span>
               </a>

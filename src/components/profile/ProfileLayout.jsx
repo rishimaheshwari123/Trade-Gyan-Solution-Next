@@ -7,7 +7,7 @@ const ProfileLayout = () => {
     <div className="flex">
       <Sidebar />
       <Outlet />
-    </div>
+    </div> 
   );
 };
 
