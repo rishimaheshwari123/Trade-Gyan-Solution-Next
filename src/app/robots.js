@@ -1,11 +1,12 @@
-export default function robots() {
-    const baseURL = "https://discoveryindianews.com/";
+
+  export default function robots() {
+    const baseURL = "https://www.tradegyan.co";
     return {
       rules: {
-        userAgent: '*',
-        allow: ['/','/category','/subcategory'],
-        disallow: [],
+        userAgent: "*",
+        allow: ["/", "/*"],
+        disallow: ["/admin/*"],
       },
-      sitemap: `${baseURL}sitemap.xml`,
-    }
+      sitemap: `${baseURL}/sitemap.xml`,
+    };
   }
