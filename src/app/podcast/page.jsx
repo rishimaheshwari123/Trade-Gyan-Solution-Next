@@ -1,83 +1,41 @@
-"use client"
-import React, {useState, useEffect} from "react";
-import axios from "axios";
-import Link from "next/link";
+import Podcast from "./Podcast";
 
-function Podcast() {
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
-
-  const [blog, setBlog] = useState([]);
-
-  const getAllBlogs = async () => {
-    try {
-      const response = await axios.get(`${BASE_URL}/blog/getAll`);
-
-      if (response?.data?.success) {
-        setBlog(response.data.blogs);
-      }
-    } catch (error) {
-      console.log("Something went wrong");
-    }
-  };
-
-  useEffect(() => {
-    getAllBlogs();
-  }, []);
-
-  const formatDate = (dateString) => {
-    const options = {year: "numeric", month: "long", day: "numeric"};
-    return new Date(dateString).toLocaleDateString("en-US", options);
-  };
-
+const page = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl  text-center font-bold mb-4">List of Podcast</h1>
-
-      {blog.length === 0 ? (
-        <p className="text-gray-500">No articles available at the moment.</p>
-      ) : (
-        <div className="w-full grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {blog.map(
-            (article, index) =>
-              article.type === "blog" && (
-                <Link
-                  key={index}
-                  to={`/podcast/${article._id}`}
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                  {/* Card for image, title, description, and date */}
-                  <div className="card bg-gray-100 p-4 rounded-lg">
-                    {/* Image */}
-                    <img
-                      className="w-full object-cover rounded-lg"
-                      src={article.image}
-                      alt={article.title || "Article thumbnail"}
-                    />
-
-                    {/* Title and Description */}
-                    <div className="px-4 py-4">
-                      <h2 className="font-bold text-xl text-gray-800 mb-2">
-                        {article.title}
-                      </h2>
-                      <p className="text-gray-700 text-sm">
-                        {article.desc?.substring(0, 100)}...{" "}
-                        {/* Short description */}
-                      </p>
-                    </div>
-
-                    {/* Date */}
-                    <div className="px-4 pb-4">
-                      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                        {formatDate(article.createdAt)}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              )
-          )}
-        </div>
-      )}
+    <div>
+      <Podcast />
     </div>
   );
-}
+};
 
-export default Podcast;
+export default page;
+export const generateMetadata = () => {
+  return {
+    title: " Podcast - Trade Gyan Solution",
+    description:
+      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
+    keywords:
+      "Investor Home , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
+    url: "https://www.tradegyan.co",
+    image: "/logo192.png",
+
+    // Open Graph Tags
+    openGraph: {
+      type: "website",
+      url: "https://www.tradegyan.co/podcast",
+      title: "About Us - Trade Gyan Solution",
+      description:
+        "Learn about Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
+      image: "/logo192.png",
+    },
+
+    // Twitter Tags
+    twitter: {
+      card: "summary_large_image",
+      title: "Podcast - Trade Gyan Solution",
+      description:
+        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
+      image: "/logo192.png",
+    },
+  };
+};

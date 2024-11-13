@@ -55,7 +55,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/disclaimer/complain">
+              <Link href="/disclaimer-and-terms">
                 <p className="hover:text-yellow-400">Complaint Data</p>
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Footer = () => {
           </h3>
           <ul className="text-sm sm:text-base space-y-2">
             <li>
-              <Link href="/disclaimer/privacy">
+              <Link href="/disclaimer-and-terms">
                 <p className="hover:text-yellow-400">Privacy Policy</p>
               </Link>
             </li>
