@@ -2,7 +2,7 @@ import io from 'socket.io-client';
 
 // const BASE_URL = process.env.REACT_API_URL
 
-const BASE_URL = "https://trade.mahitechnocrafts.in/api/v1"
+const BASE_URL = "https://api.tradegyan.co/api/v1"
 const SOCKET_SERVER_URL = BASE_URL; // Ensure this matches your server URL
 // const SOCKET_SERVER_URL = 'https://photomanager.mahitechnocrafts.in/'; // Ensure this matches your server URL
 const socket = io(SOCKET_SERVER_URL, {

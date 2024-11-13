@@ -12,6 +12,7 @@ import {useEffect, useState} from "react";
 import Navbar from "../components/comman/Navbar";
 import Whatsapp from "../components/comman/Whatsapp";
 import { usePathname } from 'next/navigation'
+import Head from 'next/head';
 
 const Wrapper = ({children}) => {
   const [showModal, setShowModal] = useState(true);
@@ -28,17 +29,20 @@ const Wrapper = ({children}) => {
 
   const pathname = usePathname()
    const removeNavbar = pathname.includes("investor") || pathname.includes("trader")
-   
+   const isAdminRoute = pathname.startsWith("/admin");
+
   return (
     <Provider store={store}>
-      <Notification />
-    { removeNavbar ? null : <Navbar />}
+    {!isAdminRoute &&  <Notification />}
+    { removeNavbar || isAdminRoute ?  null : <Navbar />}
       {showModal && (
         <Complain onClose={handleCloseModal} showModal={showModal} />
       )}
       {children}
       <ToastContainer />
-      <Footer />
+    {!isAdminRoute &&  <Footer />}
+
+ 
       <div className="fixed bottom-0 md:left-10 left-0 z-50">
         <Whatsapp />
       </div>

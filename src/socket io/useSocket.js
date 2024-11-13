@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 
 const useSocket = () => {
 
-  const BASE_URL = 'https://trade.mahitechnocrafts.in'
+  const BASE_URL = 'https://api.tradegyan.co'
   // const BASE_URL = process.env.REACT_APP_SOCKET_BASE_URL
 
 

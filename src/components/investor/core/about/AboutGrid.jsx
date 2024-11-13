@@ -47,7 +47,7 @@ const cards = [
   {
     title: "Credibility",
     description:
-      "There is no shortcut to success. Our credibility is backed by our Director at TradeGyan Solutions, a panel member of Outlook Money and recipient of the Best Financial Advisory Award",
+      "Our credibility is built on years of proven results, expertise, and dedication to our clients' success. We are recognized for our integrity, trusted by clients, and endorsed by industry professionals.",
     icon: <FaCheckCircle className="text-4xl mb-4" />,
     bgColor: "bg-[#3b4451] text-white",
   },

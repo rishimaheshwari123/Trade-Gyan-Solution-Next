@@ -118,23 +118,21 @@ const Sidebar = () => {
 
       {/* Navigation links */}
       <ul className="text-white list-none flex flex-col gap-2 p-4 mb-14 max-h-[70vh] overflow-y-scroll sidebar">
-        {navItems.map((item) => (
-          <Link
-            key={item.to}
-            href={item.to}
-            className={({isActive}) =>
-              `text-white py-4 flex items-center hover:border-r-4 hover:border-black ${
-                isActive ? "border-r-4 border-white" : ""
-              }`
-            }>
-            <div className="text-2xl">{item.icon}</div>
-            <span
-              className={`ml-4 text-xl ${isCollapsed ? "hidden" : "block"}`}>
-              {item.label}
-            </span>
-          </Link>
-        ))}
-      </ul>
+  {navItems.map((item) => (
+    <Link key={item.to} href={item.to} className="hover:border-r-4 hover:border-black">
+      <div
+        className={`flex items-center py-3 ${
+          item.isActive ? "border-r-4 border-white" : ""
+        }`}>
+        <div className="text-2xl">{item.icon}</div>
+        <span className={`ml-4 text-xl ${isCollapsed ? "hidden" : "block"}`}>
+          {item.label}
+        </span>
+      </div>
+    </Link>
+  ))}
+</ul>
+
 
       {/* User and logout section */}
       <div className="absolute bottom-2 left-2 right-2 overflow-hidden mt-10">

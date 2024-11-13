@@ -93,6 +93,11 @@ const InquiryForm = ({ onClose, showModal }) => {
                   />
                 </div>
 
+                <div className="mt-4 text-center text-sm text-gray-600 bg-gray-100 p-2 rounded-md">
+                  One-time service for two days recommendation in any segment -{" "}
+                  <strong>₹1000</strong>
+                </div>
+
                 <div>
                   <button
                     type="submit"

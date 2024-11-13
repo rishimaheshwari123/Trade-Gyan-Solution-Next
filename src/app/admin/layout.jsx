@@ -4,9 +4,9 @@ import Sidebar from "../../components/admin/pages/Sidebar";
 function layout({children}) {
   return (
     <PrivateRoute>
-      <div className="">
+      <div className="from-gray-200 to-gray-400">
         <Sidebar />
-        <div className="lg:ml-24 mx-5 mt-3 ml-[100px] min-h-screen  bg-gradient-to-r from-gray-200 to-gray-400">
+        <div className="lg:ml-24 mx-5 mt-3 ml-[100px] min-h-screen  bg-gradient-to-r ">
           {children}
         </div>
       </div>
