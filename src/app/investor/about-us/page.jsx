@@ -1,16 +1,15 @@
 import React from "react";
-import {FaChevronDown} from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import about from "../../../assets/about.png";
 import AboutGrid from "../../../components/investor/core/about/AboutGrid";
 import Slider from "../../../components/investor/core/about/Slider";
 
-import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 
 const InvestorAbout = () => {
   return (
     <div>
- 
       <div className="relative flex justify-center items-center">
         <Image
           src={about}
@@ -37,8 +36,8 @@ const InvestorAbout = () => {
         />
         <p className="font-bold text-2xl mb-2">Mission Statement</p>
         <p className="text-xl ">
-          &quot;We will enable our clients to achieve their goals by providing the
-          best in financial guidance, and maintaining the strictest possible
+          &quot;We will enable our clients to achieve their goals by providing
+          the best in financial guidance, and maintaining the strictest possible
           standards with close and interactive engagement.&quot;
         </p>
       </div>
@@ -142,3 +141,34 @@ const InvestorAbout = () => {
 };
 
 export default InvestorAbout;
+
+export const generateMetadata = () => {
+  return {
+    title: " Investor About - Trade Gyan Solution",
+    description:
+      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
+    keywords:
+      "Investor About , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
+    url: "https://www.tradegyan.co",
+    image: "/logo192.png",
+
+    // Open Graph Tags
+    openGraph: {
+      type: "website",
+      url: "https://www.tradegyan.co/investor/about-us",
+      title: "About Us - Trade Gyan Solution",
+      description:
+        "Learn about Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
+      image: "/logo192.png",
+    },
+
+    // Twitter Tags
+    twitter: {
+      card: "summary_large_image",
+      title: "Investor About - Trade Gyan Solution",
+      description:
+        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
+      image: "/logo192.png",
+    },
+  };
+};

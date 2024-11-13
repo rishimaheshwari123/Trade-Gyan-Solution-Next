@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import {service} from "../../../../data/investordata"; // Assuming the array is exported from serviceData.js
+import { service } from "../../../../data/investordata"; // Assuming the array is exported from serviceData.js
 import {
   FaCheckCircle,
   FaMoneyBillWave,
@@ -14,8 +14,8 @@ import {
   FaLayerGroup,
 } from "react-icons/fa"; // Icons for design
 
-const InvestorServices = ({params}) => {
-  const {id} = params; // Get the id from URL params
+const InvestorServices = ({ params }) => {
+  const { id } = params; // Get the id from URL params
   const serviceItem = service.find((item) => item.id === id);
 
   if (!serviceItem) {
