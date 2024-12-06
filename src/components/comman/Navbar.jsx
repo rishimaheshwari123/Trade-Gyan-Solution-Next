@@ -154,11 +154,15 @@ const Navbar = () => {
 
               {token && user?.role === "user" && (
                 <li
-                  className="flex items-center space-x-2 cursor-pointer border-2 p-4 rounded-full"
                   onClick={goToProfile}
                 >
-                  <FaUserCircle size={28} className="text-orange-700" />
-                  <span className="font-bold">Profile</span>
+                 <Link href='/profile'
+                  className="flex items-center space-x-2 cursor-pointer border-2 p-4 rounded-full"
+                 
+                 >
+                 <FaUserCircle size={28} className="text-orange-700" />
+                 <span className="font-bold">Profile</span>
+                 </Link>
                 </li>
               )}
             </ul>

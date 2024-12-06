@@ -14,8 +14,8 @@ export const generateMetadata = ({ params }) => {
   const { name } = params;
 
   return {
-    title: `${name} - Trade Gyan Solution`,
-    description:
+  title: `${name.toUpperCase()} - Trade Gyan Solution`,
+      description:
       "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
     keywords:
       "Faq , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",

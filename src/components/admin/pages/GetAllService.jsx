@@ -14,7 +14,7 @@ import { useSelector } from "react-redux";
 import EnrollmentForm from "../EnrolledForm";
 import Link from "next/link";
 // import Swal from 'sweetalert2';
-const BASE_URL = process.env.REACT_APP_BASE_URL; // Update this to your actual backend URL
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL; // Update this to your actual backend URL
 
 const GetAllService = () => {
   const [services, setServices] = useState([]);

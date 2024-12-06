@@ -1,8 +1,13 @@
 import report from '../assets/report.jpg'
+import wealth from '../assets/investor/weath.jpg'
+import opyimizer from '../assets/investor/opyimizer.jpg'
+import mutual from '../assets/investor/mutual.webp'
+import etf from '../assets/investor/etf.jpg'
+import bond from '../assets/investor/bond.jpg'
 export const service = [
     {
         id: "1",
-        img: "https://media.licdn.com/dms/image/D4D12AQEJ256Bcyrhig/article-cover_image-shrink_720_1280/0/1678757430232?e=2147483647&v=beta&t=6rVa01GW0ce2osKy0vP16iBbjb0A5_h8u9SitngKx0Y",
+        img: wealth,
 
         name: "Trade Gyan WealthMax",
         tagline: "Empowering Your Financial Future",
@@ -42,7 +47,7 @@ export const service = [
     },
     {
         id: "2",
-        img: "https://altair.com/images/default-source/resource-images/software-asset-optimization-jpg.jpg?sfvrsn=59614c5f_0",
+        img:opyimizer,
 
         name: "Trade Gyan Asset Optimizer",
         tagline: "Optimize Your Portfolio. Optimize Your Returns",
@@ -107,7 +112,7 @@ export const service = [
 
     {
         id: "3",
-        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/quant-mutual-funds-245508936-16x9_0.jpg?VersionId=T08gcNNaO8EkbXQrNcijtOZbldevgh2_&size=690:388", // 
+        img: mutual, // 
         name: "Trade Gyan Mutual Fund Navigator",
         tagline: "Simplify Your Investments. Amplify Your Returns.",
         overview: "Trade Gyan Mutual Fund Navigator is a curated mutual fund investment solution designed to help investors achieve their financial goals. Our expert advisors will guide you through a comprehensive mutual fund selection process, providing tailored recommendations to optimize your portfolio.",
@@ -166,7 +171,7 @@ export const service = [
 
     {
         id: "4",
-        img: "https://lxme.in/wp-content/uploads/2023/02/Community-Blog-image-ETFs-1.jpg",
+        img: etf,
         name: "Trade Gyan ETF Advantage",
         tagline: "Precision Investing. Simplified.",
         overview: "Trade Gyan ETF Advantage is a curated Exchange-Traded Fund (ETF) investment solution designed to provide investors with diversified, low-cost, and efficient exposure to various asset classes and sectors. Our expert advisors will guide you through a comprehensive ETF selection process, providing tailored recommendations to optimize your portfolio.",
@@ -243,7 +248,7 @@ export const service = [
     },
     {
         id: "5",
-        img: "https://www.dividendscreen.com/wp-content/uploads/2024/07/2-600x400.jpg",
+        img: bond,
         name: "Trade Gyan Bond Plus",
         tagline: "Stable Returns. Secure Future.",
         overview: "Trade Gyan Bond Plus is a curated bond investment solution designed to provide investors with a stable source of income and capital preservation. Our expert advisors will guide you through a comprehensive bond selection process, providing tailored recommendations to optimize your portfolio.",
@@ -307,7 +312,7 @@ export const service = [
         img: report,
         name: "Special Report",
         tagline: "Special Report.",
-        overview: ".",
+        overview: "Trade Gyan Solutions Special Report",
         features: [
            
         ],

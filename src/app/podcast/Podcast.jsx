@@ -4,7 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 
 function Podcast() {
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
   const [blog, setBlog] = useState([]);
 
@@ -42,7 +42,7 @@ function Podcast() {
               article.type === "blog" && (
                 <Link
                   key={index}
-                  to={`/podcast/${article._id}`}
+                  href={`/podcast/${article?._id}`}
                   className="block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out"
                 >
                   {/* Card for image, title, description, and date */}
@@ -59,10 +59,12 @@ function Podcast() {
                       <h2 className="font-bold text-xl text-gray-800 mb-2">
                         {article.title}
                       </h2>
-                      <p className="text-gray-700 text-sm">
-                        {article.desc?.substring(0, 100)}...{" "}
-                        {/* Short description */}
-                      </p>
+
+                       <div
+  dangerouslySetInnerHTML={{
+    __html: article?.desc?.substring(0, 50) + (article?.desc?.length > 50 ? "..." : ""),
+  }}
+></div>
                     </div>
 
                     {/* Date */}

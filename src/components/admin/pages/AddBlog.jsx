@@ -3,9 +3,14 @@ import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const AddBlog = () => {
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+  const [editorHtml, setEditorHtml] = useState("");
+  const maxWords = 3000; // Maximum allowed words
+
   const [formData, setFormData] = useState({
     title: "",
     desc: "",
@@ -19,6 +24,20 @@ const AddBlog = () => {
       ...formData,
       [name]: value,
     });
+  };
+
+  const handleChangeDes = (html) => {
+    // Count words
+    const text = html.replace(/<[^>]*>?/gm, ""); // Strip HTML tags
+    const wordCount = text.split(/\s+/).length;
+
+    // Check if word count exceeds limit
+    if (wordCount <= maxWords) {
+      setEditorHtml(html);
+    } else {
+      // Display message or handle exceeding word limit
+      alert(`You cannot exceed ${maxWords} words.`);
+    }
   };
 
   const handleFileChange = (e) => {
@@ -43,7 +62,7 @@ const AddBlog = () => {
 
       const formDataToSend = new FormData();
       formDataToSend.append("title", formData.title);
-      formDataToSend.append("desc", formData.desc);
+      formDataToSend.append("desc", editorHtml);
       formDataToSend.append("type", formData.type);
       formDataToSend.append("image", formData.image);
 
@@ -79,7 +98,7 @@ const AddBlog = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 ">
       <h1 className="text-blue-600 text-center text-2xl md:text-3xl border-b-2 border-blue-600 pb-2">
         Add Blogs
       </h1>
@@ -108,24 +127,6 @@ const AddBlog = () => {
         <div className="mb-4">
           <label
             className="block text-gray-700 text-lg md:text-xl font-bold mb-2"
-            htmlFor="desc"
-          >
-            Description: <span className="text-red-500">*</span>
-          </label>
-          <input
-            type="text"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg"
-            name="desc"
-            id="desc"
-            value={formData.desc}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-lg md:text-xl font-bold mb-2"
             htmlFor="type"
           >
             Type: <span className="text-red-500">*</span>
@@ -146,6 +147,37 @@ const AddBlog = () => {
             <option value="articles">Articles</option>
           </select>
         </div>
+
+       <div className="space-y-2 col-span-2">
+          <label
+            htmlFor="description"
+            className="block text-gray-700 text-lg md:text-xl font-bold mb-2"
+          >
+            Description *
+          </label>
+          <ReactQuill
+            theme="snow"
+            value={editorHtml}
+            onChange={handleChangeDes}
+            modules={{
+              toolbar: [
+                [{ header: "1" }, { header: "2" }, { font: [] }],
+                [{ size: ["small", false, "large", "huge"] }],
+                ["bold", "italic", "underline", "strike", "blockquote"],
+                [
+                  { list: "ordered" },
+                  { list: "bullet" },
+                  { indent: "-1" },
+                  { indent: "+1" },
+                ],
+                ["clean"],
+              ],
+            }}
+            className="quill-editor bg-white "
+          />
+        </div>
+
+       
 
         <div className="mb-4">
           <label

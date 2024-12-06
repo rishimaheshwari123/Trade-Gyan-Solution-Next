@@ -5,11 +5,11 @@ import {getSingelService} from "../../../../services/operations/auth";
 import {BuyProduct} from "../../../../services/operations/order";
 import {useDispatch, useSelector} from "react-redux";
 import Swal from "sweetalert2";
-import {useRouter} from "next/navigation";
+import {useParams, useRouter} from "next/navigation";
 
-const SingleService = ({params}) => {
+const SingleService = () => {
   const [service, setService] = useState(null);
-  const {id} = params;
+  const {id} = useParams();
   const {token, user} = useSelector((state) => state.auth);
   const navigate = useRouter();
   const dispatch = useDispatch();

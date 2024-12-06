@@ -11,7 +11,7 @@ import { getSingleUserApi } from "../../../services/operations/auth";
 import { FcSms } from "react-icons/fc";
 import Link from "next/link";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL; // Update this to your actual backend URL
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL; // Update this to your actual backend URL
 
 function CRM() {
   const [users, setUsers] = useState([]);

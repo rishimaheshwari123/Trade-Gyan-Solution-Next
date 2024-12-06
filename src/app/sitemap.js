@@ -23,7 +23,6 @@ export default async function sitemap() {
     {url: `${baseURL}/test`, lastModified: new Date()},
     {url: `${baseURL}/articles`, lastModified: new Date()},
     {url: `${baseURL}/learn`, lastModified: new Date()},
-    {url: `${baseURL}/service/:id`, lastModified: new Date()},
     {url: `${baseURL}/investor`, lastModified: new Date()},
     {url: `${baseURL}/investor/about-us`, lastModified: new Date()},
     {url: `${baseURL}/investor/services`, lastModified: new Date()},

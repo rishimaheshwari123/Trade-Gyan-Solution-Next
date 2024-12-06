@@ -9,6 +9,7 @@ const nextConfig = {
             "google.com",
             "static.vecteezy.com",
             "cdn.prod.website-files",
+            "res.cloudinary.com"
             // add more domains as needed
         ],
     },

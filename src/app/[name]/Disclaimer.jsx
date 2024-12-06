@@ -155,7 +155,7 @@ const policiesData = [
     content: [
       {
         heading: "Complaint Data",
-        points: [<ComplaintsTable />],
+        points: [<ComplaintsTable key="complaint-table" />],
       },
     ],
   },
@@ -165,7 +165,7 @@ const policiesData = [
     content: [
       {
         heading: "Risk Considerations",
-        points: [<RiskProfileForm />],
+        points: [<RiskProfileForm key="risk-considerations" />],
       },
     ],
   },
@@ -186,7 +186,7 @@ const Disclaimer = () => {
           <h2 className="text-2xl font-semibold mb-4">Our Policies</h2>
           <ul className="space-y-4">
             {policiesData.map((policy, index) => (
-              <li key={index}>
+              <li key={index} >
                 <button
                   onClick={() => setActiveTab(policy.id)} // Set the active tab when clicked
                   className={`text-lg flex items-center w-full text-left transition-colors ${

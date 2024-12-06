@@ -320,3 +320,14 @@ body {
   /* color: green; */
   scale: 1.1;
 }
+
+
+.quill-editor .ql-container {
+  height: 100%; /* Ensure the container takes the full height */
+  min-height: 30vh; /* Match the height set for the editor */
+}
+
+.quill-editor .ql-editor {
+  height: 100%; /* Ensure the text area matches the container height */
+  min-height: 30vh; /* Match the height set for the editor */
+}

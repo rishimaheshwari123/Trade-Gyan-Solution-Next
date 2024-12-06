@@ -11,7 +11,7 @@ const SinglePodcast = ({params}) => {
   const getSingleBlog = async (id) => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_BASE_URL}/blog/get/${id}`
+        `${process.env.NEXT_PUBLIC_BASE_URL}/blog/get/${id}`
       );
       if (response?.data?.success) {
         setSingleBlog(response.data.blog);
@@ -57,7 +57,7 @@ const SinglePodcast = ({params}) => {
               }}></p>
             <br />
             <Link
-              to="/podcast"
+              href="/podcast"
               className="bg-orange-500 px-8 w-fit py-4 rounded-md flex m-auto text-white text-xl">
               Back To Blog
             </Link>

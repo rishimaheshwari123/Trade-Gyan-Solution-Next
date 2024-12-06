@@ -2,9 +2,10 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 
 function Articles() {
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
   const [blog, setBlog] = useState([]);
 
@@ -47,10 +48,12 @@ function Articles() {
                   {/* Card for image, title, description, and date */}
                   <div className="card bg-gray-100 p-4 rounded-lg">
                     {/* Image */}
-                    <img
+                    <Image
                       className="w-full object-cover rounded-lg"
-                      src={article.image}
+                      src={article?.image}
                       alt={article.title || "Article thumbnail"}
+                      width={500}
+                      height={500}
                     />
 
                     {/* Title and Description */}
@@ -58,10 +61,14 @@ function Articles() {
                       <h2 className="font-bold text-xl text-gray-800 mb-2">
                         {article.title}
                       </h2>
-                      <p className="text-gray-700 text-sm">
-                        {article.desc?.substring(0, 100)}...{" "}
-                        {/* Short description */}
-                      </p>
+
+                      <div
+  dangerouslySetInnerHTML={{
+    __html: article?.desc?.substring(0, 50) + (article?.desc?.length > 50 ? "..." : ""),
+  }}
+></div>
+
+                   
                     </div>
 
                     {/* Date */}

@@ -31,7 +31,7 @@ const Service = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {services?.map((service) => (
             <Link
-              to={`/trader/service/${service._id}`}
+              href={`/trader/service/${service?._id}`}
               key={service._id}
               className="relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out flex flex-col overflow-hidden transform hover:-translate-y-2"
             >

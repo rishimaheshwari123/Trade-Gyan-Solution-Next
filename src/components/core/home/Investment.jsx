@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Router from "next/router";
 import { FaUserTie, FaChartLine } from "react-icons/fa";
 
@@ -23,12 +24,12 @@ const Investment = () => {
           <p className="text-gray-600 text-sm md:text-lg mb-6">
             Explore tools to grow your investment portfolio.
           </p>
-          <button
+          <Link
             className="bg-[#260062] text-white py-2 px-6 rounded-full font-medium text-sm md:text-base hover:bg-[#8a2a2a] transition-colors"
-            onClick={() => ROut.push("/investor")}
+            href={"/investor"}
           >
             Explore Investor Tools
-          </button>
+          </Link>
         </div>
 
         {/* Trader Section */}
@@ -42,12 +43,12 @@ const Investment = () => {
           <p className="text-gray-600 text-sm md:text-lg mb-6">
             Discover advanced trading tools for the market.
           </p>
-          <button
+          <Link
             className="bg-[#260062] text-white py-2 px-6 rounded-full font-medium text-sm md:text-base hover:bg-[#8a2a2a] transition-colors"
-            onClick={() => Router.push("/trader")}
+            href={"/trader"}
           >
             Explore Trader Tools
-          </button>
+          </Link>
         </div>
       </div>
     </div>

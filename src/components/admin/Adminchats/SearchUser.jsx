@@ -6,7 +6,7 @@ const UserSearch = ({ onUserSelect }) => {
   const [query, setQuery] = useState('');
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const BASE_URL = process.env.REACT_APP_BASE_URL
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
   // Debounce function to delay API calls
   const debounce = (func, delay) => {

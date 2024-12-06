@@ -9,7 +9,7 @@ const ConversationList = ({  onUserSelect }) => {
   const { token } = useSelector(state => state.auth);
   const { user } = useSelector(state => state.auth);
   const [socket, setSocket] = useState(null);
-  const BASE_URL = process.env.REACT_APP_SOCKET_BASE_URL
+  const BASE_URL = process.env.NEXT_PUBLIC_SOCKET_URL
 
 const [conversationId, setConversationId] = useState(null);
 
@@ -30,7 +30,7 @@ const [conversationId, setConversationId] = useState(null);
 
   useEffect(() => {
     // Connect to Socket.IO server
-    const newSocket = io(process.env.REACT_APP_SOCKET_BASE_URL , {
+    const newSocket = io(process.env.NEXT_PUBLIC_SOCKET_URL , {
       query: { token }, // Pass the auth token if required
     });
     console.log(token)

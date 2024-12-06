@@ -95,7 +95,7 @@ const Slider = () => {
                 </p>
                 {item.buttonText && (
                   <Link
-                    href={item.buttonLink}
+                    href={item?.buttonLink}
                     className="bg-[#efcc41] text-[#62000f] px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-[#ffc107] transition transform hover:scale-105 duration-300"
                   >
                     {item.buttonText}

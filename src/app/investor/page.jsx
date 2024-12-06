@@ -10,32 +10,38 @@ const page = () => {
 export default page;
 
 export const generateMetadata = () => {
+  const title = "Investor Home - Trade Gyan Solution | Expert Trading and Market Insights";
+  const description =
+    "Trade Gyan Solution is a leading financial market research and consulting company with over 10 years of experience. We provide traders with unbiased technical analysis, proven strategies, and reliable solutions to succeed in the financial markets.";
+  const keywords =
+    "Investor Home, financial market research, stock market analysis, trading solutions, technical analysis, trading strategies, consulting services, trader insights, customer success, sustainable trading, market trends, financial consulting, trading accuracy";
+  const url = "https://www.tradegyan.co/investor";
+  const image = "/logo192.png";
+
   return {
-    title: " Investor Home - Trade Gyan Solution",
-    description:
-      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
-    keywords:
-      "Investor Home , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
-    url: "https://www.tradegyan.co",
-    image: "/logo192.png",
+    title,
+    description,
+    keywords,
+    url,
+    image,
 
     // Open Graph Tags
     openGraph: {
       type: "website",
-      url: "https://www.tradegyan.co/investor",
-      title: "About Us - Trade Gyan Solution",
+      url,
+      title,
       description:
-        "Learn about Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
-      image: "/logo192.png",
+        "Discover Trade Gyan Solution - a trusted partner for traders offering expert financial market research, analysis, and proven trading strategies.",
+      image,
     },
 
     // Twitter Tags
     twitter: {
       card: "summary_large_image",
-      title: "Investor Home - Trade Gyan Solution",
+      title,
       description:
-        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
-      image: "/logo192.png",
+        "Empowering traders with expert financial market insights and strategies. Explore sustainable and reliable trading solutions with Trade Gyan Solution.",
+      image,
     },
   };
 };

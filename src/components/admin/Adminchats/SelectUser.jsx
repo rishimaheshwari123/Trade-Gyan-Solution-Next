@@ -9,7 +9,7 @@ const ConversationList = ({ onConversationSelect, onUserSelect }) => {
   const { token } = useSelector(state => state.auth);
   const { user } = useSelector(state => state.auth);
   const [socket, setSocket] = useState(null);
-  const BASE_URL = process.env.REACT_APP_SOCKET_BASE_URL
+  const BASE_URL = process.env.NEXT_PUBLIC_SOCKET_URL
   const[first,setFirst] = useState(true)
   const [loading, setLoading] = useState(false);
 

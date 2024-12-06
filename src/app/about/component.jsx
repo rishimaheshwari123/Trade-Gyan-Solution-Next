@@ -1,18 +1,22 @@
 "use client";
 
 import React, {useEffect} from "react";
+import img1 from '../../assets/main-about/1.png'
+import img2 from '../../assets/main-about/2.png'
+import main from '../../assets/main-about/main.svg'
+import Image from "next/image";
 
 const About = () => {
   const about = [
     {
       id: 1,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/62132591d8ef27b618d319fa_Group%201000002483.png",
+      img:img1,
       title: "Objective",
       desc: "The objective is to continue delivering value by ensuring customer’s success. This will be achieved by adhering to the highest standards of business conduct.",
     },
     {
       id: 2,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/621325a9a04fa00a4f2bd11d_Group%201000002484.png",
+      img: img2,
       title: "Mission",
       desc: "We view our mission in reliable-efficient responsible delivery of financial research to our consumers and help them create wealth out of their savings.",
     },
@@ -30,8 +34,8 @@ const About = () => {
   return (
     <div>
       <div className="lg:relative lg:flex lg:justify-center grid">
-        <img
-          src="https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/62063591231f730a1ad3a81c_unsplash_c3tNiAb098I%20(1).svg"
+        <Image
+          src={main}
           alt=""
           className="w-full h-64 sm:h-80 md:h-full object-cover"
         />
@@ -87,7 +91,7 @@ const About = () => {
               currElem.id === 3 ? "lg:mt-14" : ""
             }`}
             key={index}>
-            <img src={currElem.img} alt="not found" />
+            <Image src={currElem.img} alt="not found" />
             <p className="font-bold text-2xl">{currElem?.title}</p>
             <p>{currElem?.desc}</p>
           </div>

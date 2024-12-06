@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 const useSocket = () => {
 
   const BASE_URL = 'https://api.tradegyan.co'
-  // const BASE_URL = process.env.REACT_APP_SOCKET_BASE_URL
+  // const BASE_URL = process.env.NEXT_PUBLIC_SOCKET_URL
 
 
   useEffect(() => {

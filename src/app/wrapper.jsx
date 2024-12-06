@@ -29,7 +29,7 @@ const Wrapper = ({children}) => {
 
   const pathname = usePathname()
    const removeNavbar = pathname.includes("investor") || pathname.includes("trader")
-   const isAdminRoute = pathname.startsWith("/admin");
+   const isAdminRoute = pathname.startsWith("/admin") || pathname.includes("profile") || pathname.includes("subscription") || pathname.includes("chats") ;
 
   return (
     <Provider store={store}>

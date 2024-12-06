@@ -14,6 +14,22 @@ function TraderSingleData() {
     }
   }, [name, slug]);
 
+  useEffect(() => {
+    if (traderData && traderData.length > 0) {
+      const firstData = traderData[0]; // Assuming you want to use the first item's details
+      document.title = `${firstData.name} | Trader Details`;
+      const metaDescription = document.querySelector("meta[name='description']");
+      if (metaDescription) {
+        metaDescription.content = firstData.description || "Default description for trader data.";
+      } else {
+        const newMeta = document.createElement("meta");
+        newMeta.name = "description";
+        newMeta.content = firstData.description || "Default description for trader data.";
+        document.head.appendChild(newMeta);
+      }
+    }
+  }, [traderData]);
+
   return (
     <div className="relative mt-3">
       {traderData ? (

@@ -12,12 +12,12 @@ const Profile = () => {
   const navigate = useRouter();
 
   const handleLogout = () => {
+    navigate.push("/client-login");
     dispatch(setUser(null));
     dispatch(setToken(null));
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     toast.success("Logout Successfully");
-    navigate.push("/client-login");
   };
 
   return (

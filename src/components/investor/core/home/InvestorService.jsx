@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { service } from '../../../../data/investordata'
 import Link from 'next/link'
 import React from 'react'
@@ -13,7 +14,7 @@ function InvestorService() {
           <div
             key={index}
             className="relative group text-white overflow-hidden">
-            <img
+            <Image
               src={service?.img}
               alt={service?.name}
               className="w-full h-60 sm:h-72 lg:h-96 object-cover group-hover:opacity-80 transition-opacity duration-500"

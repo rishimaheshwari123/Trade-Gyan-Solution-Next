@@ -8,7 +8,7 @@ const ComplaintTrends = () => {
   const [pastMonthsData, setPastMonthsData] = useState([]);
   const [pastYearsData, setPastYearsData] = useState([]);
   const [grandTotalYears, setGrandTotalYears] = useState({});
-  const BASE_URL = process.env.REACT_APP_SOCKET_BASE_URL;
+  const BASE_URL = process.env.NEXT_PUBLIC_SOCKET_URL;
 
   useEffect(() => {
     const fetchData = async () => {

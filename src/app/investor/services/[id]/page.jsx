@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { service } from "../../../../data/investordata"; // Assuming the array is exported from serviceData.js
 import {
@@ -13,21 +13,46 @@ import {
   FaExchangeAlt,
   FaLayerGroup,
 } from "react-icons/fa"; // Icons for design
+import Image from "next/image";
 
 const InvestorServices = ({ params }) => {
   const { id } = params; // Get the id from URL params
   const serviceItem = service.find((item) => item.id === id);
 
+  
+
+  const metaData = () => {
+    if (serviceItem) {
+      document.title = `${serviceItem.name} | Investor Details`;
+      const metaDescription = document.querySelector(
+        "meta[name='description']"
+      );
+      if (metaDescription) {
+        metaDescription.content =
+          serviceItem.overview || "Default description for Investor data.";
+      } else {
+        const newMeta = document.createElement("meta");
+        newMeta.name = "description";
+        newMeta.content =
+          serviceItem.overview || "Default description for Investor data.";
+        document.head.appendChild(newMeta);
+      }
+    }
+  };
+
+  useEffect(() => {
+    metaData();
+  },[]);
+
   if (!serviceItem) {
     return <p className="text-red-600 font-semibold">Service not found</p>; // Fallback if no service is found
   }
-
   return (
     <div className="p-6 space-y-12 max-w-4xl mx-auto">
       {/* Service Image and Heading */}
       <div className="shadow-lg p-6 rounded-lg bg-white">
-        <img
-          src={serviceItem?.img || "https://via.placeholder.com/600"}
+        <Image
+          src={serviceItem.img}
           alt={serviceItem?.name}
           className="w-full h-64 object-cover rounded-md"
         />
