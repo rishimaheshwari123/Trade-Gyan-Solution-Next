@@ -8,7 +8,7 @@ import {
   FaBullseye,
   FaLaptopCode,
 } from "react-icons/fa";
-
+import image from "../../../assets/guy_use_.jpg"
 const Experience = () => {
   return (
     <div className="bg-cover bg-center relative text-center lg:text-start">
@@ -82,7 +82,7 @@ const Experience = () => {
         </div>
         <div className="second flex justify-center items-center">
           <Image
-            src="https://www.optionsplay.com/wp-content/themes/optionsplay/images/guy_using_tablet_graphic.png"
+            src={image}
             alt="Investment Opportunities"
             className="max-w-full h-auto rounded-lg"
             width={500}
