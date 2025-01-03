@@ -1,130 +1,111 @@
-import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaExternalLinkAlt } from "react-icons/fa";
+import React from 'react';
 
-const ComplaintEscalation = () => {
+const data = [
+  {
+    designation: 'Customer Care',
+    contactPerson: 'Himanshu Muralia',
+    address: 'Plot No - 01 Ravidas Nagar near quality bazaar, Indrapuri Bhopal',
+    contactNo: '917771004878',
+    email: 'compliance@tradegyan.com',
+    workingHours: 'Mon-Fri 09 AM - 06 PM'
+  },
+  {
+    designation: 'Head of Customer Care',
+    contactPerson: 'Sumit Khare',
+    address: 'Plot No.9, Sector C, Govindpura Industrial Area, JK Road, Bhopal, MP 462023, India',
+    contactNo: '9109976842',
+    email: 'rasumitkhare@gmail.com',
+    workingHours: 'Mon-Fri 09 AM - 06 PM'
+  },
+  {
+    designation: 'Compliance Officer',
+    contactPerson: 'Sumit Khare',
+    address: 'Plot No.9, Sector C, Govindpura Industrial Area, JK Road, Bhopal, MP 462023, India',
+    contactNo: '9109976843',
+    email: 'compliance.sumitkharera@gmail.com',
+    workingHours: 'Mon-Fri 09 AM - 06 PM'
+  },
+  {
+    designation: 'CEO',
+    contactPerson: 'Sumit Khare',
+    address: 'Plot No.9, Sector C, Govindpura Industrial Area, JK Road, Bhopal, MP 462023, India',
+    contactNo: '9109976842',
+    email: 'rasumitkhare@gmail.com',
+    workingHours: 'Mon-Fri 09 AM - 06 PM'
+  },
+  {
+    designation: 'Principal Officer',
+    contactPerson: 'Sumit Khare',
+    address: 'Plot No.9, Sector C, Govindpura Industrial Area, JK Road, Bhopal, MP 462023, India',
+    contactNo: '9109976842',
+    email: 'rasumitkhare@gmail.com',
+    workingHours: 'Mon-Fri 09 AM - 06 PM'
+  }
+];
+
+const DataTable = () => {
   return (
-    <section className="p-8 bg-gray-50">
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
-        <h2 className="text-3xl font-bold text-center text-black mb-6">
-          Complaint Escalation at Trade Gyan
-        </h2>
+    <div className="overflow-x-auto max-w-full px-6 py-8 w-11/12 mx-auto">
+      
+      {/* Heading Section */}
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 ">
+        If you have a grievance, you can reach out to our Support Team for assistance.
+      </h2>
 
-        <div className="space-y-6 text-black">
-          {/* Level 1 */}
-          <div>
-            <h3 className="text-2xl font-semibold">Level 1:</h3>
-            <p className="mt-2 text-lg">
-              All clients having complaints regarding any service or otherwise
-              shall write a mail to
-              <span className="font-semibold"> compliance@tradegyan.com</span>.
-              To ensure timely recording and recognition of the grievance, the
-              respective department shall respond within 72 hours with respect
-              to the redressal of such complaint.
-            </p>
-          </div>
+      {/* Table */}
+      <div className="overflow-x-auto bg-white shadow-md rounded-lg border border-gray-300">
+        <table className="min-w-full table-auto border-collapse">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Details of Designation</th>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Contact Person Name</th>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Address (Physical Location)</th>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Contact No.</th>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Email-ID</th>
+              <th className="px-6 py-4 text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-left border-b border-gray-400">Working Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((row, index) => (
+              <tr key={index} className="border-b border-gray-200">
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">{row.designation}</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">Himanshu Muralia</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">Plot No - 01 Ravidas Nagar near quality bazaar, Indrapuri Bhopal</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">917771004878</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">compliance@tradegyan.com</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">{row.workingHours}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-          {/* Level 2 */}
-          <div>
-            <h3 className="text-2xl font-semibold">Level 2:</h3>
-            <p className="mt-2 text-lg">
-              If the client still wants to escalate the complaint, he/she can
-              approach the Compliance Officer,
-              <span className="font-semibold"> Himanshu Muralia</span> at{" "}
-              <FaPhoneAlt className="inline text-black" /> +91 7771004878. He
-              shall ensure to resolve the issue within 48 hours.
-            </p>
-          </div>
+      {/* Additional Information Section */}
+      <div className="mt-8 text-gray-700 space-y-4">
+        <p className="text-lg sm:text-xl">
+          We aim to resolve all grievances within 21 working days from the date of receipt.
+        </p>
 
-          {/* Important note */}
-          <div>
-            <p className="text-lg">
-              <span className="font-semibold">Note:</span> If the client marks a
-              copy of the mail to all levels, it will not be considered as
-              escalated. The complaint will always start at Level 1, and only
-              after a separate mail post-expiration or reply from the previous
-              level will the complaint move to the next level.
-            </p>
-          </div>
+        <p className="text-lg sm:text-xl">
+          If your grievance is not resolved within this timeframe, you can escalate it to SEBI’s SCORES Platform (SEBI Complaints Redress System).
+        </p>
 
-          {/* SEBI and ODR Platform */}
-          <div className="mt-6">
-            <p className="text-lg">
-              You can also file a complaint on the SEBI SCORES platform -
-              <a
-                href="https://scores.sebi.gov.in/"
-                className="text-black underline inline-flex items-center"
-              >
-                https://scores.sebi.gov.in/{" "}
-                <FaExternalLinkAlt className="ml-1" />
-              </a>
-              , or contact SEBI on their Toll-Free Helpline at 1800 22 7575 /
-              1800 266 7575.
-            </p>
-            <p className="mt-4 text-lg">
-              If unsatisfied with the response, you can access the
-              <a
-                href="https://smartodr.in"
-                className="text-black underline inline-flex items-center"
-              >
-                ODR Portal <FaExternalLinkAlt className="ml-1" />
-              </a>
-              . Refer to SEBI circular no.
-              SEBI/HO/OIAE/OIAE_IAD-1/P/CIR/2023/131 dated July 31, 2023, for
-              details on Online Dispute Resolution in the Indian Securities
-              Market.
-            </p>
-          </div>
+        <div className="flex items-center space-x-2">
+          <span className="font-bold">SCORES Portal:</span>
+          <a href="https://scores.sebi.gov.in" className="text-blue-500 hover:underline">scores.sebi.gov.in</a>
         </div>
 
-        {/* Compliance Officer Contact */}
-        <div className="mt-8 text-lg">
-          <p>
-            <span className="font-semibold">Compliance Officer:</span> Himanshu
-            Muralia
-          </p>
-          <p>
-            <FaEnvelope className="inline text-black" />{" "}
-            <span className="ml-2">compliance@tradegyan.com</span>
-          </p>
-          <p>
-            <FaPhoneAlt className="inline text-black" />{" "}
-            <span className="ml-2">+91 7771004878</span>
-          </p>
+        <p className="text-lg sm:text-xl">
+          In case you are unsatisfied with the resolution provided through our support or the SCORES platform, you can access the Online Dispute Resolution (ODR) Portal.
+        </p>
+
+        <div className="flex items-center space-x-2">
+          <span className="font-bold">ODR Portal:</span>
+          <a href="https://smartodr.in" className="text-blue-500 hover:underline">smartodr.in</a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default ComplaintEscalation;
-
-export const generateMetadata = () => {
-  return {
-    title: "Complaint Escalation - Trade Gyan Solution",
-    description:
-      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
-    keywords:
-      "Investor Home , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
-    url: "https://www.tradegyan.co",
-    image: "/logo192.png",
-
-    // Open Graph Tags
-    openGraph: {
-      type: "website",
-      url: "https://www.tradegyan.co/complaint-escalation",
-      title: "Complaint Escalation - Trade Gyan Solution",
-      description:
-        "Complaint Escalation about Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
-      image: "/logo192.png",
-    },
-
-    // Twitter Tags
-    twitter: {
-      card: "summary_large_image",
-      title: "Complaint Escalation - Trade Gyan Solution",
-      description:
-        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
-      image: "/logo192.png",
-    },
-  };
-};
+export default DataTable;
