@@ -1,33 +1,33 @@
-import './globals.css';
-import Wrapper from './wrapper';
+import "./globals.css";
+import Wrapper from "./wrapper";
 
 export const generateMetadata = () => {
   return {
-    title: 'Trade Gyan Solutions - Expert Investment and Trading Advisory',
+    title: "Trade Gyan Solutions - Expert Investment and Trading Advisory",
     description:
-      'Trade Gyan Solutions is a SEBI registered investment advisory in India, offering expert recommendations for NSE stock trading, F&O, commodities (MCX, NCDEX), with an impressive accuracy of 80-90%.',
+      "Trade Gyan Solutions is a SEBI registered investment advisory in India, offering expert recommendations for NSE stock trading, F&O, commodities (MCX, NCDEX), with an impressive accuracy of 80-90%.",
     keywords:
-      'investment advisory, SEBI registered, stock trading, NSE Recommendation, F&O recommendations, MCX trading, NCDEX commodities, trading accuracy, stock market, investment strategies, financial advisory',
-    url: 'https://www.tradegyan.co/',
-    image: '/logo192.png',
+      "investment advisory, SEBI registered, stock trading, NSE Recommendation, F&O recommendations, MCX trading, NCDEX commodities, trading accuracy, stock market, investment strategies, financial advisory",
+    url: "https://www.tradegyan.co/",
+    image: "/logo192.png",
 
     // Open Graph Tags
     openGraph: {
-      type: 'website',
-      url: 'https://www.tradegyan.co/',
-      title: 'Trade Gyan Solutions - Expert Investment and Trading Advisory',
+      type: "website",
+      url: "https://www.tradegyan.co/",
+      title: "Trade Gyan Solutions - Expert Investment and Trading Advisory",
       description:
-        'Trade Gyan Solutions offers expert investment advice for stocks and commodities with high accuracy.',
-      image: '/logo192.png',
+        "Trade Gyan Solutions offers expert investment advice for stocks and commodities with high accuracy.",
+      image: "/logo192.png",
     },
 
     // Twitter Tags
     twitter: {
-      card: 'summary_large_image',
-      title: 'Trade Gyan Solutions - Expert Investment and Trading Advisory',
+      card: "summary_large_image",
+      title: "Trade Gyan Solutions - Expert Investment and Trading Advisory",
       description:
-        'Trade Gyan Solutions offers expert investment advice for stocks and commodities with high accuracy.',
-      image: '/logo192.png',
+        "Trade Gyan Solutions offers expert investment advice for stocks and commodities with high accuracy.",
+      image: "/logo192.png",
     },
   };
 };
@@ -52,6 +52,14 @@ export default function RootLayout({ children }) {
             `,
           }}
         ></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {'send_to': 'AW-826260110/WudeCP-_8XoQjvX-iQM'});
+            `,
+          }}
+        />
       </head>
       <body>
         <Wrapper>{children}</Wrapper>
@@ -77,4 +85,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
