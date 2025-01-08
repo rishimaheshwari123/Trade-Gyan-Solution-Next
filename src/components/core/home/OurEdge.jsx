@@ -53,8 +53,8 @@ const OurEdge = () => {
             </p>
           </div>
 
-          <div className="">
-            <ul className="grid grid-cols-2 gap-8 md:gap-12 place-content-between">
+          <div className=" flex w-full justify-center">
+            <ul className="grid grid-cols-2 gap-10 md:gap-12 place-content-between">
               {edge.map((ele, ind) => (
                 <li
                   key={ind}

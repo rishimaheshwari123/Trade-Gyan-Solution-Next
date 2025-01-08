@@ -71,8 +71,9 @@ const DataTable = () => {
                 <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">{row.designation}</td>
                 <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">Himanshu Muralia</td>
                 <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">Plot No - 01 Ravidas Nagar near quality bazaar, Indrapuri Bhopal</td>
-                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">917771004878</td>
-                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">compliance@tradegyan.com</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg"><a href="tel:+91917771004878">917771004878</a>
+</td>
+                <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg"><a href="mailto:compliance@tradegyan.com">compliance@tradegyan.com</a></td>
                 <td className="px-6 py-4 text-xs sm:text-sm md:text-base lg:text-lg">{row.workingHours}</td>
               </tr>
             ))}

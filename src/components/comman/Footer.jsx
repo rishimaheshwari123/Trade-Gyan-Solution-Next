@@ -161,9 +161,9 @@ const Footer = () => {
             INA000008808)2024. All rights reserved. Himanshu Muralia, Proprietor
             of Trade Gyan Solutions.
           </p>
-          <p>Contact Details :+91 7771004878 E-Mail id :- info@tradegyan.co</p>
-          <p>Principal Officer Contact Details :+91 7771004878</p>
-          <p>E-Mail id :- info@tradegyan.co</p>
+          <p>Contact Details :+91 7771004878 E-Mail id :-  <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a></p>
+          <p>Principal Officer Contact Details : <a href="tel:917771004878">+917771004878</a></p>
+          <p>E-Mail id :- <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a></p>
           <p>SEBI Registration Number: INA000008808</p>
           <p>Trade Name : TRADE GYAN SOLUTIONS</p>
           <p>Type of Registration : Individual.</p>

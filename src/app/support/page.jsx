@@ -29,7 +29,7 @@ const Support = () => {
               <FaEnvelope className="text-4xl  mb-4" />
               <h2 className="text-xl font-semibold mb-2">Email Support</h2>
               <p className="text-gray-600">Send us an email:</p>
-              <p className="font-bold ">info@tradegyan.co</p>
+              <p className="font-bold "><a href="mailto:info@tradegyan.co">info@tradegyan.co</a></p>
             </div>
 
             {/* Office Location */}

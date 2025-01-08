@@ -44,9 +44,9 @@ export default function Home() {
 
 export const generateMetadata = () => {
   return {
-    title: "Home - Trade Gyan Solution",
+    title: "Best Investment Services in Bhopal - Trade Gyan Solution",
     description:
-      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
+      "Trade Gyan Solution is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs. Explore trusted experts in wealth management, investment strategies, and more.",
     keywords:
       "Home , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
     url: "https://www.tradegyan.co",
