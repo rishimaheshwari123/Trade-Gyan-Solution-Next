@@ -3,6 +3,7 @@
 import React, {useEffect} from "react";
 import img1 from '../../assets/main-about/1.png'
 import img2 from '../../assets/main-about/2.png'
+import img3 from '../../assets/main-about/about3.png'
 import main from '../../assets/main-about/main.svg'
 import Image from "next/image";
 
@@ -22,7 +23,7 @@ const About = () => {
     },
     {
       id: 3,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/621325abb6b02d65e33d4c1b_Group%201000002485-p-500.png",
+      img: img3,
       title: "Values",
       desc: "Respect every Individual, Bring Passion to Work, Be Disciplined, Committed & Transparent Demand Excellence from Self & Others What’s Right than Who’s Right Have Fun@ Work.",
     },
@@ -91,7 +92,7 @@ const About = () => {
               currElem.id === 3 ? "lg:mt-14" : ""
             }`}
             key={index}>
-            <Image src={currElem.img} alt="not found" />
+            <Image src={currElem.img} alt="not found" width={500} height={500} />
             <p className="font-bold text-2xl">{currElem?.title}</p>
             <p>{currElem?.desc}</p>
           </div>

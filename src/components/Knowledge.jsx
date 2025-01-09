@@ -4,6 +4,7 @@ import k1 from "../assets/boomberg.png";
 import k2 from "../assets/invest.jpeg";
 import k3 from "../assets/Reuters-paywall.jpg";
 import Link from "next/link";
+import Image from "next/image";
 
 const Knowledge = () => {
   const blog = [
@@ -62,7 +63,7 @@ const Knowledge = () => {
       <div className="bg-[#f6f6f6] p-10">
         <div className="main max-w-7xl mx-auto p-5">
           <div className="flex flex-col lg:flex-row gap-10">
-            <img src={kno} alt="not found" />
+            <Image src={kno} alt="not found" height={500} width={500} />
             <p>
               It’s time to treat your grey cells, every now and then. We bring
               you interesting facts about anything & everything Finance – from
@@ -80,7 +81,8 @@ const Knowledge = () => {
                 key={currElem.id}
               >
                 {/* Image with minimized size */}
-                <img
+                <Image
+                height={500} width={500}
                   src={currElem?.image}
                   alt="not found"
                   className="w-full h-48 object-cover"
