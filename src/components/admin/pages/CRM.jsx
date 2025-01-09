@@ -157,7 +157,7 @@ function CRM() {
   return (
     <div className="p-6 bg-gray-100">
       <div className="flex lg:justify-between my-5 flex-col lg:flex-row">
-        <h1 className="text-2xl font-bold mb-4">CRM - User Management</h1>
+        <h6 className="text-2xl font-bold mb-4">CRM - User Management</h1>
         <button
           onClick={handleDownloadExcel}
           className="bg-blue-500 text-white p-2 rounded"

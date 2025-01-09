@@ -86,12 +86,15 @@ const Slider = () => {
               <Image
                 src={item.image}
                 alt={item.title}
-                // layout="fill"
+                layout="responsive"
+
                 objectFit="cover"
                 width={1920}
                 height={1080}
-                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
+                className="w-full h-full object-cover"
+                
               />
               <div
                 className={`absolute inset-0 p-8 z-10 flex flex-col justify-center transition-opacity duration-1000 ${

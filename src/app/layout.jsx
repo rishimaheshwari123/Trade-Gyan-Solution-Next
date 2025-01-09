@@ -36,6 +36,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="canonical" href="https://www.tradegyan.co/" />
+      <link rel="preload" href="https://images.inc.com/uploaded_files/image.jpg" as="image" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Trade Gyan",
+            url: "https://www.tradegyan.co/",
+            logo: "https://www.tradegyan.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftradegyan.b8071fe1.png&w=1920&q=75",
+            description:
+              "Trade Gyan Solutions is a SEBI registered investment advisory offering expert recommendations for NSE stock trading, F&O, commodities, and more with high accuracy.",
+          })}
+        </script>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-826260110"

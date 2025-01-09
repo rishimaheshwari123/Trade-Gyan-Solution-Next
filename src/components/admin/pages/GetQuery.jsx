@@ -73,7 +73,7 @@ const GetQuery = () => {
 
   return (
     <div className="container mx-auto px-4 h-[80vh]">
-      <h1 className="text-2xl font-semibold mb-6 text-center">Query List</h1>
+      <h6 className="text-2xl font-semibold mb-6 text-center">Query List</h1>
 
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-200 rounded-lg">

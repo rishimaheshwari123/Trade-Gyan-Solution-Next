@@ -39,7 +39,7 @@ function TraderSingleData() {
             className="container mx-auto p-4 text-gray-800 lg:w-[70%] grid lg:grid-cols-2 gap-6"
           >
             <div className="flex flex-col gap-5">
-              <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
+              <h6 className="text-4xl font-bold text-center text-blue-600 mb-6">
                 {data?.name}
               </h1>
               <p className="text-lg leading-relaxed lg:text-2xl">

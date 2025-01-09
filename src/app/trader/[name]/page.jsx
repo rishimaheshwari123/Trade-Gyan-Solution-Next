@@ -40,7 +40,7 @@ function TraderDatas({params}) {
         <div className="flex justify-center w-screen min-h-[50vh] bg-gray-900 py-10 px-4">
           {traderData.length > 0 ? (
             <div className="w-full max-w-[1200px]">
-              <h1 className="text-4xl text-center font-bold mb-6 text-blue-400">
+              <h6 className="text-4xl text-center font-bold mb-6 text-blue-400">
                 {name.toUpperCase()} Services
               </h1>
               <div

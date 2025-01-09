@@ -59,7 +59,7 @@ const SingleService = () => {
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-white to-gray-50 shadow-lg rounded-lg p-8 space-y-6">
           {/* Title and Description */}
           <div className="border-b pb-4">
-            <h1 className="text-4xl font-bold text-blue-700 mb-4">
+            <h6 className="text-4xl font-bold text-blue-700 mb-4">
               {service.serviceName}
             </h1>
             <p className="text-gray-700 text-lg">{service.description}</p>

@@ -8,9 +8,10 @@ const Investment = () => {
 
   return (
     <div className="py-12 px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#260062] mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#260062] mb-4">
         Investment Profiles
       </h2>
+      <h1 className="text-[15px]  font-bold text-center text-[#260062] mb-12">Best Finance Company in Bhopal</h1>
 
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Investor Section */}

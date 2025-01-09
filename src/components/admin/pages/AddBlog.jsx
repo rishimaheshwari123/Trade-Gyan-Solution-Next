@@ -99,7 +99,7 @@ const AddBlog = () => {
 
   return (
     <div className="container mx-auto p-4 ">
-      <h1 className="text-blue-600 text-center text-2xl md:text-3xl border-b-2 border-blue-600 pb-2">
+      <h6 className="text-blue-600 text-center text-2xl md:text-3xl border-b-2 border-blue-600 pb-2">
         Add Blogs
       </h1>
       <form

@@ -8,7 +8,7 @@ const RefundPolicy = () => {
       <div className="max-w-5xl mx-auto text-gray-800">
         <div className="flex items-center space-x-3 mb-4">
           <FaRegTimesCircle className="text-red-600 text-2xl" />
-          <h1 className="text-3xl font-semibold">Refund Policy</h1>
+          <h6 className="text-3xl font-semibold">Refund Policy</h1>
         </div>
         {/* <p className="text-lg mb-4">
             At <strong>Trade Gyan Solutions</strong>, we value our customers and

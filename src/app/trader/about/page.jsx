@@ -33,7 +33,7 @@ const TraderAbout = () => {
         {/* Header Section */}
         <div className="bg-blue-900 text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+            <h6 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
             <p className="text-lg md:text-xl">
               Making a Difference, One Step at a Time
             </p>

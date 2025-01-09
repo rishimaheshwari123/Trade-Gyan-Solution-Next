@@ -49,7 +49,7 @@ const InvestorContact = () => {
         />
 
         <div className="absolute flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl text-white font-bold">Contact</h1>
+          <h6 className="text-4xl md:text-6xl text-white font-bold">Contact</h6>
           <FaChevronDown className="text-white text-3xl mt-4 animate-bounce" />
         </div>
       </div>

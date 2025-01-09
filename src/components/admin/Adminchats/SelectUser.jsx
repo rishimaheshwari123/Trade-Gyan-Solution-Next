@@ -70,7 +70,7 @@ const ConversationList = ({ onConversationSelect, onUserSelect }) => {
   if (loading && conversations.length === 0) {
     return (
       <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
-        <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
+        <h6 className="text-3xl font-bold mb-6 text-center text-gray-800">
      Conversations
 
       </h1>

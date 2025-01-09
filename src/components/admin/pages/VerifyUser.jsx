@@ -127,7 +127,7 @@ if(response){
   if (loading || !users) {
     return (
       <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
-        <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
+        <h6 className="text-3xl font-bold mb-6 text-center text-gray-800">
      Verify / Unverify Users List
 
       </h1>
@@ -137,7 +137,7 @@ if(response){
   }
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4 text-center">Verify Users</h1>
+      <h6 className="text-2xl font-bold mb-4 text-center">Verify Users</h1>
       <div className="overflow-x-auto">
       <div className="flex mb-4">
         <input

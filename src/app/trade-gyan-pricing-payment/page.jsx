@@ -31,7 +31,7 @@ const Prising = () => {
         className="bg-gradient-to-br from-blue-50 to-green-50 py-10"
       >
         <div className="p-8 max-w-7xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-extrabold mb-10 text-center text-black">
+          <h6 className="text-2xl md:text-3xl font-extrabold mb-10 text-center text-black">
             Our Pricing Plans
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">

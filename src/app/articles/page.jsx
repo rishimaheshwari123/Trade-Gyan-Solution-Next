@@ -32,7 +32,7 @@ function Articles() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl  text-center font-bold mb-4">List of Articles</h1>
+      <h6 className="text-3xl  text-center font-bold mb-4">List of Articles</h6>
 
       {blog.length === 0 ? (
         <p className="text-gray-500">No articles available at the moment.</p>

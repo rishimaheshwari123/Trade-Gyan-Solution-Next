@@ -12,7 +12,7 @@ const Learn = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-center  mb-8">
+        <h6 className="text-4xl font-bold text-center  mb-8">
           Learn About Investing
         </h1>
 

@@ -29,9 +29,9 @@ const InvestorServices = () => {
         />
 
         <div id="inservice" className="absolute flex flex-col items-center text-center" >
-          <h1 className="text-4xl md:text-6xl text-white font-bold">
+          <h6 className="text-4xl md:text-6xl text-white font-bold">
             Our Services
-          </h1>
+          </h6>
           <FaChevronDown className="text-white text-3xl mt-4 animate-bounce" />
         </div>
       </div>

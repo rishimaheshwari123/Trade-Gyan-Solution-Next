@@ -46,9 +46,9 @@ export const generateMetadata = () => {
   return {
     title: "Best Investment Services in Bhopal - Trade Gyan Solution",
     description:
-      "Trade Gyan Solution is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs. Explore trusted experts in wealth management, investment strategies, and more.",
+      "Trade Gyan Solution is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs.",
     keywords:
-      "Home , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
+      "investment opportunities in india ,financial services companies,investment services near me,top finance companies,financial services providers, financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
     url: "https://www.tradegyan.co",
     image: "/logo192.png",
 
