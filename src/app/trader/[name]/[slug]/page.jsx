@@ -41,7 +41,7 @@ function TraderSingleData() {
             <div className="flex flex-col gap-5">
               <h6 className="text-4xl font-bold text-center text-blue-600 mb-6">
                 {data?.name}
-              </h1>
+              </h6>
               <p className="text-lg leading-relaxed lg:text-2xl">
                 {data.description}
               </p>

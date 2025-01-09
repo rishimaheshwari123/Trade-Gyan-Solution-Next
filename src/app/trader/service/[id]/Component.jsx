@@ -63,7 +63,7 @@ const SingleService = () => {
             <div className="border-b pb-4">
               <h6 className="text-4xl font-bold text-blue-700 mb-4">
                 {service.serviceName}
-              </h1>
+              </h6>
               <p className="text-gray-700 text-lg">{service.description}</p>
             </div>
 

@@ -101,7 +101,7 @@ const AddBlog = () => {
     <div className="container mx-auto p-4 ">
       <h6 className="text-blue-600 text-center text-2xl md:text-3xl border-b-2 border-blue-600 pb-2">
         Add Blogs
-      </h1>
+      </h6>
       <form
         onSubmit={handleSubmit}
         className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2"

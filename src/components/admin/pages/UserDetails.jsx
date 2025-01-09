@@ -38,7 +38,7 @@ function UserDetails({id}) {
 
   return (
     <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h6 className="text-2xl font-bold mb-4">User Details</h1>
+      <h6 className="text-2xl font-bold mb-4">User Details</h6>
       <div className="space-y-4">
         <div className="flex items-center space-x-3">
           <FaUser className="h-5 w-5 text-gray-500" />

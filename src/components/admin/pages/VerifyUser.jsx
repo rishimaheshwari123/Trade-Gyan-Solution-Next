@@ -130,14 +130,14 @@ if(response){
         <h6 className="text-3xl font-bold mb-6 text-center text-gray-800">
      Verify / Unverify Users List
 
-      </h1>
+      </h6>
         <div className="spinner"></div>
       </div>
     );
   }
   return (
     <div className="p-6">
-      <h6 className="text-2xl font-bold mb-4 text-center">Verify Users</h1>
+      <h6 className="text-2xl font-bold mb-4 text-center">Verify Users</h6>
       <div className="overflow-x-auto">
       <div className="flex mb-4">
         <input

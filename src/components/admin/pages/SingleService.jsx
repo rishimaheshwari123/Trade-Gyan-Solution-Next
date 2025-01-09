@@ -40,7 +40,7 @@ function SingleServiceAdmin({id}) {
         <div className="container mx-auto p-6">
             {/* Service Details */}
             <div className="bg-white shadow-lg p-6 rounded-lg mb-8">
-                <h6 className="text-3xl font-bold text-gray-800 mb-4">{service.serviceName}</h1>
+                <h6 className="text-3xl font-bold text-gray-800 mb-4">{service.serviceName}</h6>
                 <p className="text-gray-600"><strong>Category:</strong> {service.serviceCategory}</p>
                 <p className="text-gray-600"><strong>Description:</strong> {service.description}</p>
                 <p className="text-gray-600"><strong>Duration:</strong> {service.duration}</p>

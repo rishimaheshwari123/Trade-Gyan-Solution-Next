@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
     <div>
       <div className="min-h-screen bg-gray-100 p-6">
         <div className="max-w-4xl mx-auto bg-white p-8 shadow-lg rounded-lg">
-          <h6 className="text-2xl font-bold mb-6">Terms & Conditions</h1>
+          <h6 className="text-2xl font-bold mb-6">Terms & Conditions</h6>
 
           <p className="mb-4">
             Trade Gyan Solutions is a SEBI Registered Investment Adviser having

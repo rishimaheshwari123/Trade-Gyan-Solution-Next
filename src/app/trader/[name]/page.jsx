@@ -42,7 +42,7 @@ function TraderDatas({params}) {
             <div className="w-full max-w-[1200px]">
               <h6 className="text-4xl text-center font-bold mb-6 text-blue-400">
                 {name.toUpperCase()} Services
-              </h1>
+              </h6>
               <div
                 className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${traderData.length} gap-6`}>
                 {traderData.map((item, index) => (
