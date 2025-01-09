@@ -31,7 +31,7 @@ function Podcast() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h6 className="text-3xl  text-center font-bold mb-4">List of Podcast</h1>
+      <h6 className="text-3xl  text-center font-bold mb-4">List of Podcast</h6>
 
       {blog.length === 0 ? (
         <p className="text-gray-500">No articles available at the moment.</p>

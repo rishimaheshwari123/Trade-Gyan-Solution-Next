@@ -6,7 +6,7 @@ const SebiDisclosure = () => {
       <section className="max-w-5xl mx-auto">
         <h6 className="text-4xl font-bold mb-8">
           SEBI’s Investor Charter for Investment Advisers (IAs)
-        </h1>
+        </h6>
 
         <div className="mb-8">
           <h2 className="text-2xl font-semibold">

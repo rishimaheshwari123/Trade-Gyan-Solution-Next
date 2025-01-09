@@ -20,7 +20,7 @@ const InvestorAbout = () => {
         <div className="absolute flex flex-col items-center text-center">
           <h6 className="text-4xl md:text-6xl text-white font-bold">
             About Us
-          </h1>
+          </h6>
           <br />
           <br />
           <br />

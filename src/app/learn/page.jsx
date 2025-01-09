@@ -14,7 +14,7 @@ const Learn = () => {
       <div className="container mx-auto">
         <h6 className="text-4xl font-bold text-center  mb-8">
           Learn About Investing
-        </h1>
+        </h6>
 
         {/* Introduction Section */}
         <div className="text-center mb-12">

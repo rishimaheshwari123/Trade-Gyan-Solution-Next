@@ -7,7 +7,7 @@ const Team = () => {
       <div className="container mx-auto p-8">
         {/* Team Description */}
         <div className="text-center mb-12">
-          <h6 className="text-4xl font-bold mb-4 text-gray-800">Our Team</h1>
+          <h6 className="text-4xl font-bold mb-4 text-gray-800">Our Team</h6>
           <p className="text-lg text-gray-900 mb-2">
             THERE IS NO SHORTCUT TO SUCCESS. OUR CREDIBILITY COMES FROM TEAM
             TRADE GYAN SOLUTIONS

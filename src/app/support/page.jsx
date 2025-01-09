@@ -8,7 +8,7 @@ const Support = () => {
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl">
           <h6 className="text-3xl font-bold text-center  mb-6">
             Support & Help Center
-          </h1>
+          </h6>
           <p className="text-center text-gray-600 mb-8">
             We are here to help you with any questions or issues you may have.
             Feel free to reach out to us via phone, email, or visit us.

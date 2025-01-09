@@ -48,7 +48,7 @@ const SinglePodcast = ({params}) => {
             className="flex justify-center items-center lg:w-[60vw] lg:h-[50vh] object-cover mx-auto"
           />
           <div className="p-6">
-            <h6 className="text-3xl font-bold mb-2">{singleBlog.title}</h1>
+            <h6 className="text-3xl font-bold mb-2">{singleBlog.title}</h6>
             <br />
             <p
               className="text-gray-700 text-lg mb-4"

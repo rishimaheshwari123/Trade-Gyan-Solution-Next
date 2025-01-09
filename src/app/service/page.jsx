@@ -29,7 +29,7 @@ const Service = () => {
       <div className="p-8 max-w-7xl mx-auto">
         <h6 className="text-2xl md:text-3xl font-extrabold mb-10 text-center text-black">
           Our Pricing Plans
-        </h1>
+        </h6>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {services?.map((service) => (
             <Link

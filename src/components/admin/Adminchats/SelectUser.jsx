@@ -73,7 +73,7 @@ const ConversationList = ({ onConversationSelect, onUserSelect }) => {
         <h6 className="text-3xl font-bold mb-6 text-center text-gray-800">
      Conversations
 
-      </h1>
+      </h6>
         <div className="spinner"></div>
       </div>
     );
