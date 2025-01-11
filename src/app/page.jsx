@@ -46,7 +46,7 @@ export const generateMetadata = () => {
   return {
     title: "Best Investment Services in Bhopal - Trade Gyan Solution",
     description:
-      "Trade Gyan Solution is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs.",
+      "Trade Gyan Solutions is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs.",
     keywords:
       "investment opportunities in india ,financial services companies,investment services near me,top finance companies,financial services providers, financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
     url: "https://www.tradegyan.co",
@@ -56,18 +56,18 @@ export const generateMetadata = () => {
     openGraph: {
       type: "website",
       url: "https://www.tradegyan.co",
-      title: "Home - Trade Gyan Solution",
+      title: "Home - Trade Gyan Solutions",
       description:
-        "Learn about Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
+        "Learn about Trade Gyan Solutions, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
       image: "/logo192.png",
     },
 
     // Twitter Tags
     twitter: {
       card: "summary_large_image",
-      title: "Home - Trade Gyan Solution",
+      title: "Home - Trade Gyan Solutions",
       description:
-        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
+        "Trade Gyan Solutions offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
       image: "/logo192.png",
     },
   };
