@@ -113,7 +113,7 @@ const InvestorAbout = () => {
               <h3 className="text-lg font-semibold text-gray-600">
                 Contact No.
               </h3>
-              <p className="text-gray-800">+91 7771004878</p>
+              <p className="text-gray-800">+91 7771004878, +917771004879</p>
             </div>
           </div>
 

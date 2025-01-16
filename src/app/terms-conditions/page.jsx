@@ -79,7 +79,7 @@ const TermsAndConditions = () => {
 
           <div className="flex items-center mb-2">
             <FaPhone className="mr-2" />
-            <span> 7771004878</span>
+            <span> 7771004878 , +917771004879</span>
           </div>
 
           <div className="flex items-center mb-4">

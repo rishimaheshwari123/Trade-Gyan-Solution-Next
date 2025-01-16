@@ -41,7 +41,7 @@ const jobPostings = [
   {
     title: "How to contact you in the Market hours?",
     details:
-      "You can anytime call us at our Support Number: +91-7771004878, you can contact to our specific departments.",
+      "You can anytime call us at our Support Number: +91-7771004878, +917771004879 you can contact to our specific departments.",
   },
   {
     title: "What are your paid services?",
@@ -51,7 +51,7 @@ const jobPostings = [
   {
     title: "What is the procedure to subscribe to your services?",
     details:
-      "You can fill up the Subscription Form available on the Website or simply talk to our Support Team 24/7 for assistance at +91-7771004878.",
+      "You can fill up the Subscription Form available on the Website or simply talk to our Support Team 24/7 for assistance at +91-7771004878, +917771004879.",
   },
   {
     title: "What is the Best Trading Style you recommend for the trader?",
@@ -71,7 +71,7 @@ const jobPostings = [
   {
     title: "Can we directly talk to the analysts?",
     details:
-      "Yes, you can directly contact to our representatives, as when you get subscribed with us one of our representatives takes your regular follow-up and you can contact your representative any time at his/her extensions or you can call us 24/7 at our hotline number +91-7771004878 and talk directly to our Analysts and get complete support on your Positions.",
+      "Yes, you can directly contact to our representatives, as when you get subscribed with us one of our representatives takes your regular follow-up and you can contact your representative any time at his/her extensions or you can call us 24/7 at our hotline number +91-7771004878, +917771004879 and talk directly to our Analysts and get complete support on your Positions.",
   },
   {
     title: "Do you recommend taking delivery?",
@@ -86,7 +86,7 @@ const jobPostings = [
   {
     title: "Is there any support helpline available?",
     details:
-      "We provide the quality services to our clients but still if you have any queries and support, then you can directly contact to our support and Grievances Department 24/7 by contacting at +91-7771004878 or you can write us at info@tradegyan.co .",
+      "We provide the quality services to our clients but still if you have any queries and support, then you can directly contact to our support and Grievances Department 24/7 by contacting at +91-7771004878, +917771004879 or you can write us at info@tradegyan.co .",
   },
   {
     title: "Is there any live support facility available?",
