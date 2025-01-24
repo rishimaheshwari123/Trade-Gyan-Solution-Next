@@ -12,9 +12,9 @@ export default page;
 
 export const generateMetadata = () => {
   return {
-    title: " Investor Contact - Trade Gyan Solution",
+    title: " Investor Contact - TradeGyan Solutions",
     description:
-      "Trade Gyan Solution is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
+      "TradeGyan Solutions is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
     keywords:
       "Investor Contact , financial market research, stock market analysis, trading solutions, technical analysis, consulting services, trading community, customer success, sustainability, financial consulting, market trends, trading strategies",
     url: "https://www.tradegyan.co",
@@ -24,18 +24,18 @@ export const generateMetadata = () => {
     openGraph: {
       type: "website",
       url: "https://www.tradegyan.co/investor/contact-us",
-      title: "Contact Us - Trade Gyan Solution",
+      title: "Contact Us - TradeGyan Solutions",
       description:
-        "Learn Contact Trade Gyan Solution, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
+        "Learn Contact TradeGyan Solutions, a financial market research and consulting company with a 10+ year legacy, providing expert analysis and solutions for the trading community.",
       image: "/logo192.png",
     },
 
     // Twitter Tags
     twitter: {
       card: "summary_large_image",
-      title: "Investor Contact - Trade Gyan Solution",
+      title: "Investor Contact - TradeGyan Solutions",
       description:
-        "Trade Gyan Solution offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
+        "TradeGyan Solutions offers expert financial market research and consulting with a focus on customer success, sustainability, and innovation.",
       image: "/logo192.png",
     },
   };

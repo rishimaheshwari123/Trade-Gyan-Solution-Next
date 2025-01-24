@@ -44,7 +44,7 @@ export default function Home() {
 
 export const generateMetadata = () => {
   return {
-    title: "Best Investment Services in Bhopal - Trade Gyan Solution",
+    title: "Best Investment Services in Bhopal - Trade Gyan Solutions",
     description:
       "Trade Gyan Solutions is the leading financial services provider in Bhopal offering innovative solutions tailored to your financial needs.",
     keywords:
