@@ -4,7 +4,7 @@ const offices = [
   {
     city: "Bhopal",
     address: "Plot No.9, Sector C, JK Road Bhoapl, MP 462023 India",
-    phone: "+917771004878",
+    phone: "+917771004878, +917771004879",
     email: "info@tradegyan.co",
   },
 ];
@@ -22,7 +22,7 @@ const ReachUs = () => {
               {office?.address}
             </p>
             <p className="flex items-center text-gray-700 text-sm">
-              <FaPhoneAlt className="text-blue-500 mr-2" /> <a href="tel:917771004878">917771004878</a>
+              <FaPhoneAlt className="text-blue-500 mr-2" /> <a href="tel:917771004878">917771004878</a>  <a href="tel:917771004879">+917771004879</a>
             </p>
             <p className="flex items-center text-gray-700 text-sm">
               <FaEnvelope className="text-blue-500 mr-2" /> <a href="mailto:info@tradegyan.co">info@tradegyan.co</a>

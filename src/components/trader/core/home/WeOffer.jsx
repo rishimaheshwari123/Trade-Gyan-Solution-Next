@@ -22,7 +22,7 @@ const WeOffer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              our website TradeGyan Solution
+              our website TradeGyan Solutions
             </a>
             .
           </p>

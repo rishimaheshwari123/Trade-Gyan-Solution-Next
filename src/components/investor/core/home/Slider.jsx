@@ -23,7 +23,7 @@ const Slider = () => {
       image:
         "https://cdn-res.keymedia.com/cms/images/ca/155/0287_637338487618644943.jpg",
       title: "“Financial freedom is to be able to do what one wants in life”",
-      headline: "TradeGyan Solution, Founder and Chief Financial Planner",
+      headline: "TradeGyan Solutions, Founder and Chief Financial Planner",
       description: "Plan your financial future with expert guidance",
       buttonText: "Talk To Us",
       buttonLink: "/contact", // You can set the actual link here

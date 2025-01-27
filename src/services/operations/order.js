@@ -71,7 +71,7 @@ export async function BuyProduct(
       currency: orderResponse.data.data.currency,
       amount: `${orderResponse.data.data.amount}`,
       order_id: orderResponse.data.data.id,
-      name: "TradeGyan Solution",
+      name: "TradeGyan Solutions",
       description: "Thank you for Purchasing the Products.",
       image: rzpLogo,
       prefill: {

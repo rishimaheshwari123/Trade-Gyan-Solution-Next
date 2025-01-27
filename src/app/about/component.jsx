@@ -52,7 +52,7 @@ const About = () => {
             research in stock movements.
           </h2>
           <p className="text-gray-700 mb-4 text-sm sm:text-base md:text-lg">
-            <strong>Trade Gyan Solution</strong> is a pure play financial market
+            <strong>TradeGyan Solutions</strong> is a pure play financial market
             research and consulting company. We are differentiated by the
             stature of our diverse team. Our 10 years of legacy and values shape
             our future, helping to strengthen our business and bring value to
@@ -67,7 +67,7 @@ const About = () => {
             Our organization&apos;s commitment to sustainability informs our
             unmatched credibility, technology, intensive research, and customer
             satisfaction. The global presence that{" "}
-            <strong>Trade Gyan Solution</strong> maintains acts as an edge on
+            <strong>TradeGyan Solutions</strong> maintains acts as an edge on
             clients&apos; success, giving us keen insight across regions and markets,
             and allowing us to make a difference around the world.
           </p>
