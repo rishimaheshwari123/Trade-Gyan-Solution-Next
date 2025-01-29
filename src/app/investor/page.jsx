@@ -10,9 +10,9 @@ const page = () => {
 export default page;
 
 export const generateMetadata = () => {
-  const title = "Investor Home - TradeGyan Solutions | Expert Trading and Market Insights";
+  const title = "Best SEBI Registered Company in India - Trade Gyan Solutions";
   const description =
-    "TradeGyan Solutions is a leading financial market research and consulting company with over 10 years of experience. We provide traders with unbiased technical analysis, proven strategies, and reliable solutions to succeed in the financial markets.";
+    "With Trade Gyan Solutions, a SEBI-registered stock advisory company, get professional investment advice. Dependable tactics, and customized solutions.";
   const keywords =
     "Investor Home, financial market research, stock market analysis, trading solutions, technical analysis, trading strategies, consulting services, trader insights, customer success, sustainable trading, market trends, financial consulting, trading accuracy";
   const url = "https://www.tradegyan.co/investor";
