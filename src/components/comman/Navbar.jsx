@@ -130,7 +130,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   )}
-                  {user?.role === "user" && (
+                  {/* {user?.role === "user" && (
                     <li>
                       <Link
                         href="https://onboarding.dashboardfinreport.com/TradeGyan/onb_process.aspx?a=t830uy5QEhGwzE+RR1buWS3drG1f1V/0LDkpH9b1rKY=&p="
@@ -139,7 +139,7 @@ const Navbar = () => {
                         Subscribe
                       </Link>
                     </li>
-                  )}
+                  )} */}
                 </>
               ) : (
                 <li>
@@ -153,16 +153,14 @@ const Navbar = () => {
               )}
 
               {token && user?.role === "user" && (
-                <li
-                  onClick={goToProfile}
-                >
-                 <Link href='/profile'
-                  className="flex items-center space-x-2 cursor-pointer border-2 p-4 rounded-full"
-                 
-                 >
-                 <FaUserCircle size={28} className="text-orange-700" />
-                 <span className="font-bold">Profile</span>
-                 </Link>
+                <li onClick={goToProfile}>
+                  <Link
+                    href="/profile"
+                    className="flex items-center space-x-2 cursor-pointer border-2 p-4 rounded-full"
+                  >
+                    <FaUserCircle size={28} className="text-orange-700" />
+                    <span className="font-bold">Profile</span>
+                  </Link>
                 </li>
               )}
             </ul>
@@ -252,7 +250,7 @@ const Navbar = () => {
                       <span className="font-bold">{user.name}</span>
                     </li>
                   )}
-                  {user?.role === "user" && (
+                  {/* {user?.role === "user" && (
                     <li>
                       <Link
                         href="https://onboarding.dashboardfinreport.com/TradeGyan/onb_process.aspx?a=t830uy5QEhGwzE+RR1buWS3drG1f1V/0LDkpH9b1rKY=&p="
@@ -261,7 +259,7 @@ const Navbar = () => {
                         Subscribe Now
                       </Link>
                     </li>
-                  )}
+                  )} */}
 
                   <li>
                     <button
