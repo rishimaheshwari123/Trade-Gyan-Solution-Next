@@ -37,6 +37,19 @@ const SinglePodcast = ({params}) => {
       return acc + word + " ";
     }, "");
   };
+  const formatDate = (createdAt) => {
+    const date = new Date(createdAt);
+    const options = {
+      weekday: 'long', // e.g. 'Monday'
+      year: 'numeric', // e.g. '2025'
+      month: 'long', // e.g. 'February'
+      day: 'numeric', // e.g. '1'
+      hour: '2-digit', // e.g. '12'
+      minute: '2-digit', // e.g. '30'
+      hour12: true, // Show time in 12-hour format
+    };
+    return date.toLocaleDateString('en-US', options); // You can change the locale if necessary
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -45,11 +58,14 @@ const SinglePodcast = ({params}) => {
           <img
             src={singleBlog.image}
             alt={singleBlog.title}
-            className="flex justify-center items-center lg:w-[60vw] lg:h-[50vh] object-cover mx-auto"
+            className="flex justify-center items-center  lg:h-[50vh] object-fit mx-auto"
           />
           <div className="p-6">
             <h6 className="text-3xl font-bold mb-2">{singleBlog.title}</h6>
             <br />
+            <p className="text-gray-500 text-sm mb-6">
+              {formatDate(singleBlog.createdAt)}
+            </p>
             <p
               className="text-gray-700 text-lg mb-4"
               dangerouslySetInnerHTML={{
