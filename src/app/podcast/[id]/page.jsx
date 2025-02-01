@@ -29,14 +29,10 @@ const SinglePodcast = ({params}) => {
 
   const formatDescription = (desc) => {
     if (!desc) return "";
-    const words = desc.split(" ");
-    return words.reduce((acc, word, index) => {
-      if ((index + 1) % 80 === 0) {
-        return acc + word + "<br /><br />";
-      }
-      return acc + word + " ";
-    }, "");
+    return desc; // Return the raw HTML content
   };
+
+  
   const formatDate = (createdAt) => {
     const date = new Date(createdAt);
     const options = {
