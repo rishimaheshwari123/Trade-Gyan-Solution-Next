@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { service } from '../../../../data/investordata'
 import Link from 'next/link'
 import React from 'react'
-
+import TradeGyanServices from "../home/Content"
 function InvestorService() {
   return (
     <div className="container mx-auto my-10 px-4">
@@ -36,6 +36,8 @@ function InvestorService() {
           </div>
         ))}
       </div>
+
+      <TradeGyanServices />
     </div>
   )
 }
