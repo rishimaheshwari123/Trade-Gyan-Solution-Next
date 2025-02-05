@@ -17,9 +17,9 @@ const TradeGyanServices = () => {
                 key={index}
                 className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-blue-600"
               >
-                <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+                <h6 className="text-2xl font-semibold text-blue-700 mb-3">
                   {service.title}
-                </h2>
+                </h6>
                 <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
@@ -27,9 +27,9 @@ const TradeGyanServices = () => {
   
           {/* Why Choose Us Section */}
           <div className="mt-16 text-center">
-            <h2 className="text-4xl font-bold text-blue-700 mb-6">
+            <h6 className="text-4xl font-bold text-blue-700 mb-6">
               Why Choose Trade Gyan Solutions?
-            </h2>
+            </h6>
             <p className="text-gray-700 max-w-3xl mx-auto text-lg">
               Our team has years of experience in making well-informed investment decisions. Our solutions cover commodities, equity, and beyond.
             </p>
