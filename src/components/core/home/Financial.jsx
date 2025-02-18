@@ -147,7 +147,7 @@ const Financial = () => {
           <div>
             <p>
               Indices provide the best way to gauge the performance of an
-              industry, sector, or an entire country's stock market. If, on
+              industry, sector, or an entire countrys stock market. If, on
               average, the share prices of the companies making up the index go
               up, the index will rise with them. And if they fall, it will drop.
             </p>
