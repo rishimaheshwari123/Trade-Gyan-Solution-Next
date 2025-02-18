@@ -12,7 +12,7 @@ const Investment = () => {
         Investment Profiles
       </h2>
       <h1 className="text-[15px]  font-bold text-center text-[#260062] mb-12 opacity-0">
-        Best Finance Company in Bhopal
+         Finance Company in Bhopal
       </h1>
 
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">

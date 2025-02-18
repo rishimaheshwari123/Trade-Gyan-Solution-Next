@@ -10,7 +10,7 @@ const page = () => {
 export default page;
 
 export const generateMetadata = () => {
-  const title = "Best SEBI Registered Company in India - Trade Gyan Solutions";
+  const title = " SEBI Registered Company in India - Trade Gyan Solutions";
   const description =
     "With Trade Gyan Solutions, a SEBI-registered stock advisory company, get professional investment advice. Dependable tactics, and customized solutions.";
   const keywords =

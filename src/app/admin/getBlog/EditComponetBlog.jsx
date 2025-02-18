@@ -28,7 +28,7 @@ const BlogPopup = ({ isOpen, blogId, onClose,getAllBlogs }) => {
         setFormData({
             title:response.data.blog.title,
             
-            type: response.data.blog.type,
+           
             image: response.data.blog.image,
         })
         setEditorHtml(response.data.blog.desc)

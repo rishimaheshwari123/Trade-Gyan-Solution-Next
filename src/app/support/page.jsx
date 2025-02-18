@@ -83,7 +83,7 @@ export const generateMetadata = () => {
     description:
       "TradeGyan Solutions is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
     keywords:
-      "Best SEBI Registered Company in India - Trade Gyan Solutions",
+      " SEBI Registered Company in India - Trade Gyan Solutions",
     url: "https://www.tradegyan.co",
     image: "/logo192.png",
 
