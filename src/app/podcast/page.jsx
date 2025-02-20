@@ -11,7 +11,7 @@ const page = () => {
 export default page;
 export const generateMetadata = () => {
   return {
-    title: " Podcast - TradeGyan Solutions",
+    title: " Blogs - TradeGyan Solutions",
     description:
       "TradeGyan Solutions is a financial market research and consulting company with over 10 years of experience, offering unbiased technical analysis and solutions to the trading community. We aim to create an environment conducive to customer success through reliability and sustainability.",
     keywords:
