@@ -25,7 +25,11 @@ const Footer = () => {
           </p>
           <div className="mt-4 flex items-center">
             <FaPhone className="mr-2" />
-            <span>+91 777-100 4878</span>
+            <span>+917771004878</span>
+          </div>
+          <div className="mt-4 flex items-center">
+            <FaPhone className="mr-2" />
+            <span>+917771004879</span>
           </div>
           <p className="text-sm mt-1 sm:text-base">info@tradegyan.co</p>
         </div>

@@ -50,7 +50,13 @@ const Partner = () => {
         </div>
         <div className=" lg:w-[28%] w-[60%]">
           <h3 className="  lg:text-3xl font-sans text-xl">Call Us</h3>
-          <p className="  lg:text-xl text-sm">+91777-100 4878</p>
+          <p className="lg:text-xl text-sm">
+  <a href="tel:+917771004878">+91 7771004878</a>
+</p>
+<p className="lg:text-xl text-sm">
+  <a href="tel:+917771004879">+91 7771004879</a>
+</p>
+
         </div>
         <div className=" lg:w-[28%] w-[60%]">
           <h3 className="  lg:text-3xl font-sans text-xl">Mail Us</h3>
