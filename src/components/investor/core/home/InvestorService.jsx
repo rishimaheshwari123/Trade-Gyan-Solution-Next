@@ -3,6 +3,7 @@ import { service } from '../../../../data/investordata'
 import Link from 'next/link'
 import React from 'react'
 import TradeGyanServices from "../home/Content"
+import TradeGyanContent from "../home/ContentTwo"
 function InvestorService() {
   return (
     <div className="container mx-auto my-10 px-4">
@@ -37,6 +38,7 @@ function InvestorService() {
         ))}
       </div>
 
+      <TradeGyanContent />
       <TradeGyanServices />
     </div>
   )
