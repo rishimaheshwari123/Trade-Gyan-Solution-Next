@@ -36,6 +36,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+      <meta name="google-site-verification" content="_FkUfWrB9sfaw7phpUYIqgEl4MBD1xE0wViYTfaf2yU"/>
       <link rel="canonical" href="https://www.tradegyan.co/" />
       <link rel="preload" href="https://images.inc.com/uploaded_files/image.jpg" as="image" />
 
