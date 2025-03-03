@@ -113,7 +113,7 @@ const Partner = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Type your name"
+                placeholder="Name"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               />
@@ -128,7 +128,7 @@ const Partner = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="Email"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               />
@@ -143,7 +143,7 @@ const Partner = () => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                placeholder="Enter your contact number"
+                placeholder="Contact number"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               />
@@ -157,7 +157,7 @@ const Partner = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder="Message"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               ></textarea>

@@ -166,7 +166,7 @@ const Chat = ({receiverId, onClose, idReciever}) => {
             value={message}
             onChange={handleTyping}
             className="flex-1 border rounded-lg px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Type a message..."
+            placeholder=" message..."
           />
           <button
             onClick={sendMessage}

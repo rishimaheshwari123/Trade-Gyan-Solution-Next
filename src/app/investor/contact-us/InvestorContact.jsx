@@ -69,7 +69,8 @@ const InvestorContact = () => {
           </div>
           <div>
             <h3 className="text-xl font-semibold">Email:</h3>
-            <p><a href="mailtoinfo@tradegyan.co">info@tradegyan.co</a></p>
+            <p><a href="mailto:info@tradegyan.co">info@tradegyan.co</a></p>
+
           </div>
 
           <button

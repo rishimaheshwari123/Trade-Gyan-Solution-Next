@@ -18,6 +18,7 @@ import "swiper/css/effect-fade";
 import Image from "next/image";
 import Link from "next/link";
 
+import one from "../../../assets/slider/one.jpg"
 const Slider = () => {
   const [textVisible, setTextVisible] = useState(false);
 
@@ -30,7 +31,7 @@ const Slider = () => {
     {
       id: 1,
       image:
-        "https://images.inc.com/uploaded_files/image/1920x1080/getty_660952912_374375.jpg",
+      one,
       title: "Personalized Investment Strategies",
       headline: "Your Goals, Our Priority",
       description:

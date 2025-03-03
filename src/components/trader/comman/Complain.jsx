@@ -65,7 +65,7 @@ const InquiryForm = ({ onClose, showModal }) => {
                     type="text"
                     id="name"
                     className="w-full p-2 border rounded-md"
-                    placeholder="Enter your name"
+                    placeholder="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
@@ -86,7 +86,7 @@ const InquiryForm = ({ onClose, showModal }) => {
                     type="text"
                     id="contact"
                     className="w-full p-2 border rounded-md"
-                    placeholder="Enter your contact number"
+                    placeholder="contact number"
                     value={contactNumber}
                     onChange={(e) => setContactNumber(e.target.value)}
                     required

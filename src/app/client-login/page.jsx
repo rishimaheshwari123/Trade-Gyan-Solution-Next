@@ -151,7 +151,7 @@ function ClientLogin() {
                 type="email"
                 id="email"
                 className="w-full p-2 border rounded-md"
-                placeholder="Enter your Email"
+                placeholder=" Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -171,7 +171,7 @@ function ClientLogin() {
             onChange={(e) => setName(e.target.value)}
             className="w-full p-2 border rounded-md"
             placeholder={`${
-              isRegistered ? "Enter your Username" : "Enter your Full name"
+              isRegistered ? " Username" : "Full name"
             }`}
             required
           />
@@ -191,7 +191,7 @@ function ClientLogin() {
                 value={contactNumber}
                 onChange={handleContactNumberChange}
                 className="w-full p-2 border rounded-md"
-                placeholder="Enter your contact number"
+                placeholder="Contact number"
                 required
               />
             </div>
@@ -209,7 +209,7 @@ function ClientLogin() {
                 value={whatsappNumber}
                 onChange={handleWhatsappNumberChange}
                 className="w-full p-2 border rounded-md"
-                placeholder="Enter your WhatsApp number"
+                placeholder=" WhatsApp number"
                 required
               />
             </div>
@@ -244,7 +244,7 @@ function ClientLogin() {
               value={password}
               onChange={handleOnChange}
               className="w-full p-2 border rounded-md pr-10"
-              placeholder="Enter your password"
+              placeholder="Password"
               required
             />
             <button

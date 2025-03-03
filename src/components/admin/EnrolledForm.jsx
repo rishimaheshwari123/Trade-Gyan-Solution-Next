@@ -75,7 +75,7 @@ onClose(false)
           <input
             type="text"
             value={serviceName}
-            placeholder="Enter Service ID"
+            placeholder=" Service ID"
             className="border p-2 rounded w-full"
           />
         </div>
@@ -86,7 +86,7 @@ onClose(false)
             type="text"
             value={transactionId}
             onChange={(e) => setTransactionId(e.target.value)}
-            placeholder="Enter Transaction ID"
+            placeholder=" Transaction ID"
             className="border p-2 rounded w-full"
           />
         </div>
@@ -112,7 +112,7 @@ onClose(false)
             type="number"
             value={payable}
             onChange={(e) => setPayable(e.target.value)}
-            placeholder="Enter Amount Payable"
+            placeholder=" Amount Payable"
             className="border p-2 rounded w-full"
           />
 

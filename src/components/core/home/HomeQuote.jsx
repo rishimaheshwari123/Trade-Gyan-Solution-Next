@@ -72,7 +72,7 @@ const HomeQuote = () => {
               name="contact"
               value={formData.contact}
               onChange={handleChange}
-              placeholder="Enter your contact number"
+              placeholder="contact number"
               className="w-full p-2 border border-gray-300 rounded-lg"
               required
             />
@@ -87,7 +87,7 @@ const HomeQuote = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email (Optional)"
+              placeholder="email (Optional)"
               className="w-full p-2 border border-gray-300 rounded-lg"
             />
           </div>
@@ -131,7 +131,7 @@ const HomeQuote = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Enter your message (Optional)"
+              placeholder="message (Optional)"
               className="w-full p-2 border border-gray-300 rounded-lg"
             ></textarea>
           </div>

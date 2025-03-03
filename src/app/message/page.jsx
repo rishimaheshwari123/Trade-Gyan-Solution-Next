@@ -32,7 +32,7 @@ const SendMessage = () => {
       <input
         className="border border-2-red"
         type="text"
-        placeholder="Enter Phone Number"
+        placeholder="Phone Number"
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
       />

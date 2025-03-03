@@ -80,7 +80,7 @@ const TraderContact = () => {
                 name="name"
                 value={formData?.name}
                 onChange={handleChange}
-                placeholder="Type your name"
+                placeholder="Name"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               />
@@ -95,8 +95,8 @@ const TraderContact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
-                className="w-full p-2 border border-gray-300 rounded-lg"
+                placeholder="Email"
+                className="w-full nter your ep-2 border border-gray-300 rounded-lg"
                 required
               />
             </div>
@@ -110,7 +110,7 @@ const TraderContact = () => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                placeholder="Enter your contact number"
+                placeholder="contact number"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required
               />
@@ -141,7 +141,7 @@ const TraderContact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder="message"
                 className="w-full p-2 border border-gray-300 rounded-lg"
                 required></textarea>
             </div>

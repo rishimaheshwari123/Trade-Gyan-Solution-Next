@@ -127,7 +127,7 @@ const Footer = () => {
                   <FaFacebook />
                 </p>
               </Link>
-              <Link href="https://www.instagram.com/tradegyan?igsh=Y2gyYmkwYXN0ZDh4">
+              <Link href="https://www.instagram.com/tradegyan">
                 <p className="text-2xl text-pink-600 bg-white rounded-full w-14 h-14 flex items-center justify-center hover:bg-yellow-300 transition-colors">
                   <FaInstagram />
                 </p>

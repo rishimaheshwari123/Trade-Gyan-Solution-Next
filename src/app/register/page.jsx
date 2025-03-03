@@ -49,7 +49,7 @@ function Register() {
               value={name}
               onChange={handleOnChange}
               className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
-              placeholder="Enter your name"
+              placeholder="Name"
               required
             />
           </div>
@@ -61,7 +61,7 @@ function Register() {
               value={email}
               onChange={handleOnChange}
               className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
-              placeholder="Enter your email"
+              placeholder="email"
               required
             />
           </div>
@@ -73,7 +73,7 @@ function Register() {
               value={location}
               onChange={handleOnChange}
               className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
-              placeholder="Enter your location"
+              placeholder="Location"
               required
             />
           </div>
@@ -85,7 +85,7 @@ function Register() {
               value={password}
               onChange={handleOnChange}
               className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
-              placeholder="Enter your password"
+              placeholder="Password"
               required
             />
             <div
