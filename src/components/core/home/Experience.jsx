@@ -15,7 +15,8 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 p-5 items-center">
         <div className="first">
           <p className="lg:text-5xl text-3xl font-bold mb-4 text-black">
-            Transform Your Trading Journey with Trade Gyan Solutions
+          Transform Your trading adventure with Trade Gyan Solutions
+
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6">

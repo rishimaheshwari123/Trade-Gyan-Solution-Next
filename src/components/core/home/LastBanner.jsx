@@ -1,4 +1,3 @@
-
 const PartnershipBlock = () => {
   return (
     <div className="partnership-blk py-4 relative z-0">
@@ -23,9 +22,9 @@ const PartnershipBlock = () => {
               className="lg:text-lg font-normal pb-5 mb-5 lg:mb-0 wow fadeInUp mt-6"
               data-wow-delay="0.5s"
             >
-              Navigate your investment decisions with confidence. Our expert
-              guidance and tailored resources are here to support your financial
-              success.
+              Navigate your investment decisions with self-assurance. Our
+              professional steering and tailor-made sources are right here to
+              assist your economic achievement.
             </p>
           </div>
         </div>

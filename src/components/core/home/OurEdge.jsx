@@ -30,7 +30,8 @@ const OurEdge = () => {
         <div className="lg:hidden text-center w-full my-10">
           <p className="lg:text-5xl text-3xl font-bold">Our Edge</p>
           <p className="mt-4 lg:text-2xl text-sm text-black">
-            Experience the confidence we bring to the trading world.
+          Enjoy the confidence we bring to the trading world.
+
           </p>
         </div>
 
@@ -49,7 +50,8 @@ const OurEdge = () => {
           <div className="hidden lg:block">
             <p className="lg:text-5xl text-3xl font-bold">Our Edge</p>
             <p className="mt-4 text-xl">
-              Experience the confidence we bring to the trading world.
+            Enjoy the confidence we bring to the trading world.
+
             </p>
           </div>
 

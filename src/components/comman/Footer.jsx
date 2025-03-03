@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">About Us</h3>
           <p className="text-sm sm:text-base">
-            A Investment advisory company assisting investors diversify their
-            investments and reap earnings through its profound industry
-            expertise and a keen eye for detail that enables it to predict the
-            market flow in an efficient manner.
+            An Investment advisory company supporting investors to diversify
+            their investments and reap earnings through its profound enterprise
+            knowledge and an eager eye for detail that allows it to anticipate
+            the market waft efficiently.
           </p>
           <div className="mt-4 flex items-center">
             <FaPhone className="mr-2" />
@@ -165,9 +165,18 @@ const Footer = () => {
             INA000008808)2024. All rights reserved. Himanshu Muralia, Proprietor
             of Trade Gyan Solutions.
           </p>
-          <p>Contact Details :+91 7771004878 E-Mail id :-  <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a></p>
-          <p>Principal Officer Contact Details : <a href="tel:917771004878">+917771004878</a></p>
-          <p>E-Mail id :- <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a></p>
+          <p>
+            Contact Details :+91 7771004878 E-Mail id :-{" "}
+            <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a>
+          </p>
+          <p>
+            Principal Officer Contact Details :{" "}
+            <a href="tel:917771004878">+917771004878</a>
+          </p>
+          <p>
+            E-Mail id :-{" "}
+            <a href="mailto: info@tradegyan.co"> info@tradegyan.co</a>
+          </p>
           <p>SEBI Registration Number: INA000008808</p>
           <p>Trade Name : TRADE GYAN SOLUTIONS</p>
           <p>Type of Registration : Individual.</p>

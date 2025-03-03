@@ -46,7 +46,7 @@ const HomeQuote = () => {
 
       {/* Contact Form Section */}
       <div className="md:w-1/2 bg-white p-10 rounded-lg shadow-lg mt-6 md:mt-0">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">Register Now!</h2>
+        <h6 className="text-3xl font-bold mb-4 text-gray-800">Sign Up Now!</h6>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700">

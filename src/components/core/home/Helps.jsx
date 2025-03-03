@@ -18,10 +18,12 @@ const Helps = () => {
 
         <div className="flex flex-col gap-5 text-center lg:text-start items-center lg:items-start">
           <h2 className="lg:text-5xl text-3xl font-semibold text-black">
-            Elevate Your Investment Strategy
+          Increase Your Funding Method
+
           </h2>
           <p className="lg:text-2xl text-sm text-black">
-            Gain clarity and confidence with our expert insights and research.
+          Gain Readability and Self Assurance with our expert insights and studies.
+
           </p>
           <Link href="/investor" passHref>
             <span className="w-fit bg-[#260062] rounded-full px-5 py-3 font-bold hover:opacity-90 transition duration-300 text-white cursor-pointer">
