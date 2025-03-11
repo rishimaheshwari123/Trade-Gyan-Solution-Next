@@ -10,6 +10,7 @@ import TradingTips from "../../components/trader/core/home/TradingTips";
 // import Notification from "../../components/core/home/Notification";
 import Service from "../../components/Services";
 import SliderTrader from "../../components/trader/SliderTrader";
+import TraderContent from "../../components/trader/TraderContent";
 
 const TraderHome = () => {
   return (
@@ -25,6 +26,7 @@ const TraderHome = () => {
       <TradingTips />
       {/* <WhoWeAre /> */}
       <Service />
+      <TraderContent />
       {/* <ScrollingBanner /> */}
     </div>
   );
