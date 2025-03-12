@@ -28,15 +28,7 @@ const TradeGyanServices = () => {
           </div>
         </div>
 
-        {/* Call to Action Button */}
-        <div className="mt-12 flex justify-center">
-          <a
-            href="#contact"
-            className="bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-800 transition-all duration-300 shadow-lg"
-          >
-            Start Your Investment Journey
-          </a>
-        </div>
+  
     </div>
   );
 };
