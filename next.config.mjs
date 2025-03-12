@@ -2,6 +2,7 @@
 const nextConfig = {
     images: {
         domains: [
+            "images.unsplash.com",
             "images.inc.com",
             "5.imimg.com",
             "img.freepik.com",

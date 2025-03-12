@@ -67,6 +67,11 @@ const TradingTips = () => {
             <Image
               src={service?.imgSrc}
               alt={service?.title}
+              width={800} // Adjust width based on design
+              height={800} // Maintain aspect ratio
+           
+              quality={75} 
+              priority
               className="w-full h-60 sm:h-72 lg:h-96 object-cover group-hover:opacity-80 transition-opacity duration-500"
             />
             {/* Hover content */}

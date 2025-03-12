@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import Link from "next/link";
-
+import Image from "next/image";
 
 const Slider = () => {
   const [textVisible, setTextVisible] = useState(false);
@@ -56,7 +56,9 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative bg-[#1a202c]"> {/* Dark background */}
+    <div className="relative bg-[#1a202c]">
+      {" "}
+      {/* Dark background */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -68,14 +70,19 @@ const Slider = () => {
           1024: { slidesPerView: 1, spaceBetween: 0 },
         }}
       >
-        {work.map((item) => (
+        {work.map((item,index) => (
           <SwiperSlide key={item.id} className="relative">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-[75vh] md:h-[90vh] object-cover"
-              loading="lazy"
-            />
+          <Image
+  src={item.image}
+  alt={item.title}
+  width={1920}
+  height={1080}
+  quality={80}
+  className="w-full h-[75vh] md:h-[90vh] object-cover"
+  priority={index === 0} // Only the first image is prioritized
+  loading={index === 0 ? "eager" : "lazy"} // Lazy load other images
+/>
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 z-10 flex items-center justify-center px-4 md:px-8">
               {/* Text Animation */}
               <div
