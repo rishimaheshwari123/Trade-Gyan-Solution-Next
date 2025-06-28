@@ -39,7 +39,7 @@ const InquiryForm = ({ onClose, showModal }) => {
             <div className="pt-4">
               {/* Highlighted Advice Message */}
               <div className="mb-4 text-center text-base sm:text-lg font-semibold text-blue-600">
-                "Free" Advice is more Expensive than "Fee" Advice
+                {"Free"} Advice is more Expensive than {"Fee"} Advice
               </div>
 
               <h2 className="text-xl font-semibold mb-4 text-center">
