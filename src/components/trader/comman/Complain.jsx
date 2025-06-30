@@ -104,7 +104,7 @@ const InquiryForm = ({ onClose, showModal }) => {
                     official hotline numbers:{" "}
                     <strong className="text-blue-600">7771004878-79</strong>.
                     The company is not responsible for any calls made from
-                    numbers other than the official company numbers.
+                    numbers other than the official company hotlines numbers.
                   </p>
                   <p>
                     Please make payments only to the official company account
