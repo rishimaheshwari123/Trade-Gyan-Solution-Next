@@ -20,7 +20,7 @@ const Slider = () => {
   const work = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4",
+      image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350110/Welkin/pgchmnd71sumebjupjjl.jpg",
       title: "Your Wealth, Our Mission",
       headline: "Grow Your Portfolio with Expert Guidance",
       description:
@@ -30,7 +30,7 @@ const Slider = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1519337265831-281ec6cc8514",
+      image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350140/Welkin/gteiqeh1j5dk2fewksyt.jpg",
       title: "Expert Stock Market Insights",
       headline: "Unlock Opportunities, Mitigate Risks",
       description:
@@ -40,7 +40,7 @@ const Slider = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+      image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350175/Welkin/kjeknebt3z32ngckcezs.jpg",
       title: "Personalized Investment Plans",
       headline: "Achieve Your Financial Goals with Us",
       description:

@@ -25,7 +25,7 @@ const MarketsSection = () => {
       <div className="relative flex flex-col items-center justify-center">
         {/* Background Image */}
         <img
-          src="https://d10t455z86w23i.cloudfront.net/public/uploads/editor-images/images/markets/markets-graph-mob.png"
+          src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350677/Welkin/s6xsjmhtagioqyf0yb58.png"
           alt="Financial markets graph"
           className=" h-[70vh] object-cover"
         />

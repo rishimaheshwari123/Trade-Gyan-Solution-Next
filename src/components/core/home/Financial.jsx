@@ -12,7 +12,7 @@ const Financial = () => {
         </h2>
         <div className="grid lg:grid-cols-2 max-w-7xl mx-auto p-5">
           <img
-            src="https://d10t455z86w23i.cloudfront.net/public/uploads/editor-images/images/currencies.png"
+            src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753351057/Welkin/dl8ofueqqvxssmmgdne3.png"
             alt="Forex"
           />
           <div>
@@ -96,7 +96,7 @@ const Financial = () => {
         </h2>
         <div className="grid lg:grid-cols-2 max-w-7xl mx-auto p-5 mt-10">
           <img
-            src="https://d10t455z86w23i.cloudfront.net/public/uploads/editor-images/images/commodities.png"
+            src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753351205/Welkin/nt1repbeabirtjgfuf8t.png"
             alt="Commodities"
           />
           <div>
@@ -181,7 +181,7 @@ const Financial = () => {
             </ul>
           </div>
           <img
-            src="https://d10t455z86w23i.cloudfront.net/public/uploads/editor-images/images/markets/indices-new.png"
+            src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753351229/Welkin/j51h0djvciapcvtkvl5u.png"
             alt="Indices"
           />
         </div>

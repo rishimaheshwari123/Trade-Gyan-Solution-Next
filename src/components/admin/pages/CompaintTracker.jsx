@@ -41,7 +41,7 @@ const AddComplaint = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/add', {
+      const response = await axios.post('https://api.tradegyan.co/add', {
         year,
         month,
         source,

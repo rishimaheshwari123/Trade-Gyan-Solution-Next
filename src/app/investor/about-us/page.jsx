@@ -30,7 +30,7 @@ const InvestorAbout = () => {
 
       <div className="flex flex-col justify-center items-center text-center max-w-5xl mx-auto p-5">
         <img
-          src="https://www.dilzer.net/images/about-us/mission-statement.png"
+          src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350963/Welkin/pyddty5mdn5uslux6tg2.png"
           alt="Mission Statement"
           className="w-54 h-52 mb-4"
         />

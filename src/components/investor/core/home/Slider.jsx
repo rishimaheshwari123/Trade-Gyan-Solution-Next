@@ -21,7 +21,7 @@ const Slider = () => {
     {
       id: 1,
       image:
-        "https://cdn-res.keymedia.com/cms/images/ca/155/0287_637338487618644943.jpg",
+        "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350622/Welkin/hw1riu7ddxklcennxcqf.jpg",
       title: "“Financial freedom is to be able to do what one wants in life”",
       headline: "TradeGyan Solutions, Founder and Chief Financial Planner",
       description: "Plan your financial future with expert guidance",
@@ -31,7 +31,7 @@ const Slider = () => {
     {
       id: 2,
       image:
-        "https://forefrontwealthpartners.com/wp-content/uploads/Tech-Professionals-New.webp",
+        "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350645/Welkin/jljz9mj9pqs79tvd6pov.webp",
       title: "Advice today, becomes security tomorrow",
       headline: "Plan your financial future now",
       description: "Secure your tomorrow with smart financial advice",
@@ -41,7 +41,7 @@ const Slider = () => {
     {
       id: 3,
       image:
-        "https://cdn.britannica.com/86/236186-050-A65A6493/Consultant-financial-advisor-specialist-dealing-with-mature-couple-clients.jpg",
+        "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350595/Welkin/tuqal3mbkjj6vjf6dlzu.webp",
       title: "Age is just a number, but retirement income isn’t",
       headline: "Now is the time to start",
       description: "Make your retirement worry-free with proper planning",
@@ -51,7 +51,7 @@ const Slider = () => {
     {
       id: 4,
       image:
-        "https://media.licdn.com/dms/image/D5612AQFwnEsc4eaobQ/article-cover_image-shrink_600_2000/0/1680151682757?e=2147483647&v=beta&t=YrbHpcm4KN50YVfahOMzeRBo3fCdzVujfp4nzNeMyqk",
+        "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350571/Welkin/rto9gk5gtn4ohpyk9xkq.jpg",
       title: "Your wealth management is our topmost priority",
       headline: "We provide you with secure solutions",
       description: "Trust us to manage and grow your wealth responsibly",

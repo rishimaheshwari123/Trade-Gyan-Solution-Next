@@ -369,7 +369,7 @@ export const getLast5MonthsComplaints = async () => {
   try {
     const response = await apiConnector(
       "GET",
-      `http://localhost:8080/last-5-months`
+      `https://api.tradegyan.co/last-5-months`
     );
     //  console.log(response?.data)
     const result = response;

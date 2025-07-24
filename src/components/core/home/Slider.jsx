@@ -42,7 +42,7 @@ const Slider = () => {
     {
       id: 3,
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/7/435428234/VD/MG/FA/223449165/stock-market-advisor-service.jpg",
+        "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350320/Welkin/znlw4ag9y89koglptqcd.jpg",
       title: "Expert Financial Guidance",
       headline: "Your Wealth, Our Expertise",
       description:

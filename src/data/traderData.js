@@ -17,7 +17,7 @@ export const datas = {
         "cash": [
             {
                 name: "Equity Cash",
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ce914ac4294ba46621713_5e43dbb9d5c9238077b143a8_medium.png",
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349972/Welkin/jzcawthlrcqpf5yd3qr5.png",
                 description: "A product designed for traders who aim to grab high potential trades from Cash market.",
                 what: "Intraday recommendations in Cash Segment based on Technical analysis with Occasional Holding.",
                 whom: "Intra-day/Short-term Traders in Equity Market.",
@@ -39,7 +39,7 @@ export const datas = {
         "alpha-premium": [
             {
                 name: 'ALPHA PREMIUM EQUITY',
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png",
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png",
                 description: "It is one of our premium services exclusively designed for those traders who want to trade under the guidance of market experts.",
                 what: "Recommendation in Future Segment with occasional BTST recommendations.",
                 whom: " Traders in Future Segment.",
@@ -62,7 +62,7 @@ export const datas = {
         "equity-options": [
             {
                 name: 'Equity Options',
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png",
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png",
                 description: "A product designed for traders who aim to grab high potential trades in the Options Segment.",
                 what: "Intraday recommendations in Indices/Stocks options based on Technical Analysis.",
                 whom: "Intra-day/Short-term Traders in Equity Options.",
@@ -86,7 +86,7 @@ export const datas = {
         "mcx": [
             {
                 name: 'MCX',
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png",
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png",
                 description: "A product designed for traders who aim to grab high potential trades from Commodity market.",
                 what: "Intraday based recommendation in MCX commodity in the segment of Base Metals, Gold Mini, Silver Mini, Natural Gas with Occasional Holding.",
                 whom: "Intra-day/Short-term Traders in Commodity Market.",
@@ -107,7 +107,7 @@ export const datas = {
         "mcx-options": [
             {
                 name: 'MCX Options',
-                image: 'https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png',
+                image: 'https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png',
                 description: "A retail service designed for traders who want to trade in Commodity Options.",
                 what: "Recommendations in MCX Options in Gold, Silver and Crude Oil Commodities.",
                 whom: "Intraday / BTST Trader who trades on Options in MCX listed commodities.",
@@ -133,7 +133,7 @@ export const datas = {
         "ncdex": [
             {
                 name: 'NCDEX',
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png", // Replace with an appropriate image if available
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png", // Replace with an appropriate image if available
                 description: "This package is suitable for small and medium traders, who trade only in Agro calls in NCDEX market.",
                 what: "1-2 daily recommendations in NCDEX segment focusing on Agro Commodities like Soybean.",
                 whom: "Traders with 1-2 lots trading capacity who are focused on Agro Commodity trades.",
@@ -161,7 +161,7 @@ export const datas = {
             {
                 id: 'forex',
                 name: 'Forex ',
-                image: "https://cdn.prod.website-files.com/593e207ebedace68bd410daa/5e5ca74863723e867eae11eb_risko-meter-prime-gold.png",
+                image: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349994/Welkin/c3hbntjcm5nuxwjo4wpt.png",
                 description: "This package is suitable for small and medium traders who trade in international currencies like EURUSD, GBPUSD, USDJPY, and many others.",
                 what: "Daily recommendations for trading in Forex covering major currency pairs.",
                 whom: "Small and medium intraday/BTST traders who trade in Forex.",

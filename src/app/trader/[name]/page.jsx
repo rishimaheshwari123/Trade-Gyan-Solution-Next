@@ -31,7 +31,7 @@ function TraderDatas({params}) {
             movements throughout the day.
           </p>
           <img
-            src="https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/5e576ab6eb561c77911d2543_5e0091c510bfa778489f4ddb_intraday-p-500-min.png"
+            src="https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349650/Welkin/zl7lhsbyxtxazn1mnvwy.png"
             alt="Intraday Trading"
             className="rounded-xl shadow-lg w-full md:w-[70%] lg:w-[50%] object-cover"
           />

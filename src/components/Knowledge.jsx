@@ -11,7 +11,8 @@ const Knowledge = () => {
     {
       id: 1,
       type: "news",
-      link: "https://www.bloomberg.com/asia",
+      link: "#",
+      // link: "https://www.bloomberg.com/asia",
       image: k1,
       title: "Bloom Berg",
       desc: "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",
@@ -19,7 +20,8 @@ const Knowledge = () => {
     {
       id: 2,
       type: "news",
-      link: "https://www.investing.com",
+      link: "#",
+      // link: "https://www.investing.com",
       image: k2,
       title: "Investing",
       desc: "Investing.com India serves traders of a wide range of asset classes with real-time charts & quotes along with news and analysis.",
@@ -27,7 +29,8 @@ const Knowledge = () => {
     {
       id: 3,
       type: "news",
-      link: "https://www.reuters.com",
+      // link: "https://www.reuters.com",
+      link: "#",
       image: k3,
       title: "Reuters",
       desc: "Find latest news from every corner of the globe at Reuters.com, your online source for breaking international news coverage.",

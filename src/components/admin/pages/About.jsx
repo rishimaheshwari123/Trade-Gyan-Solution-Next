@@ -6,19 +6,19 @@ const About = () => {
   const about = [
     {
       id: 1,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/62132591d8ef27b618d319fa_Group%201000002483.png",
+      img: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349829/Welkin/v94eexvd8anvhthd4gux.png",
       title: "Objective",
       desc: "The objective is to continue delivering value by ensuring customer’s success. This will be achieved by adhering to the highest standards of business conduct.",
     },
     {
       id: 2,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/621325a9a04fa00a4f2bd11d_Group%201000002484.png",
+      img: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349595/Welkin/ubepkbpyz0upq7b5dkts.png",
       title: "Mission",
       desc: "We view our mission in reliable-efficient responsible delivery of financial research to our consumers and help them create wealth out of their savings.",
     },
     {
       id: 3,
-      img: "https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/621325abb6b02d65e33d4c1b_Group%201000002485-p-500.png",
+      img: "https://res.cloudinary.com/dkhb9ioku/image/upload/v1753349623/Welkin/yy3cvbqvibmo6fao14ef.png",
       title: "Values",
       desc: "Respect every Individual, Bring Passion to Work, Be Disciplined, Committed & Transparent Demand Excellence from Self & Others What’s Right than Who’s Right Have Fun@ Work.",
     },
@@ -32,7 +32,7 @@ const About = () => {
       <Navbar />
       <div className="lg:relative lg:flex lg:justify-center grid">
         <img
-          src="https://cdn.prod.website-files.com/591b46f1eacfad0f37b73b0f/62063591231f730a1ad3a81c_unsplash_c3tNiAb098I%20(1).svg"
+          src="/one1.svg"
           alt=""
           className="w-full h-64 sm:h-80 md:h-full object-cover"
         />

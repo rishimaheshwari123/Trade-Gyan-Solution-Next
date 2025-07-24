@@ -33,7 +33,7 @@ const Partner = () => {
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-60"
           style={{
-            backgroundImage: `url(https://static.vecteezy.com/system/resources/thumbnails/016/798/942/small_2x/contact-us-concept-business-man-consulting-customers-who-contact-us-call-center-service-customer-consulting-service-email-hotline-business-contact-digital-online-business-digital-service-photo.jpg)`,
+            backgroundImage: `url(https://res.cloudinary.com/dkhb9ioku/image/upload/v1753350466/Welkin/gizibcabaaoh3kicnvsj.jpg)`,
           }}
         />
         <div className="absolute bottom-2 z-10 text-[#fff5f5] font-semibold text-5xl bg-[#e2571a] p-1 rounded-2xl">

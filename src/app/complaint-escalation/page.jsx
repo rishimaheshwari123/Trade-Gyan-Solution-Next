@@ -93,7 +93,8 @@ const DataTable = () => {
 
         <div className="flex items-center space-x-2">
           <span className="font-bold">SCORES Portal:</span>
-          <a href="https://scores.sebi.gov.in" className="text-blue-500 hover:underline">scores.sebi.gov.in</a>
+          {/* <a href="https://scores.sebi.gov.in" className="text-blue-500 hover:underline">scores.sebi.gov.in</a> */}
+          <a href="" className="text-blue-500 hover:underline">scores.sebi.gov.in</a>
         </div>
 
         <p className="text-lg sm:text-xl">
@@ -102,7 +103,8 @@ const DataTable = () => {
 
         <div className="flex items-center space-x-2">
           <span className="font-bold">ODR Portal:</span>
-          <a href="https://smartodr.in" className="text-blue-500 hover:underline">smartodr.in</a>
+          {/* <a href="https://smartodr.in" className="text-blue-500 hover:underline">smartodr.in</a> */}
+          <a href="" className="text-blue-500 hover:underline">smartodr.in</a>
         </div>
       </div>
     </div>
