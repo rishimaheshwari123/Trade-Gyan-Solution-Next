@@ -6,7 +6,7 @@ function Whatsapp() {
   return (
     <div className="btn-pink">
       <Link
-        href="https://wa.me/917771004878"
+        href="https://wa.me/917771004879"
         className=" flex justify-center items-center gap-2">
         Ask To Us
         <FaWhatsapp />
